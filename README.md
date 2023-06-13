@@ -1,7 +1,7 @@
 # KoLA
 Knowledge-oriented LLM Assessment benchmark (KoLA), is hosted by Knowledge Engineering Group, Tsinghua University (THU-KEG), which aims at carefully benchmarking the world knowledge of LLMs by undertaking meticulous designs considering data, ability taxonomy and evaluation metric.
 
-![kola](/Users/yujifan/Documents/GitHub/KoLA/kola.png)
+![kola](./kola.png)
 
 This repository presents the sample data for easily submission, standardized score calculation and result visualization.
 
