@@ -1,0 +1,117 @@
+{
+    "adapter_spec": {
+        "instructions": "",
+        "input_prefix": "",
+        "input_suffix": "",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 256,
+        "stop_sequences": [],
+        "decoding_parameters": {
+            "temperature": 0
+        },
+        "ouput_format": "string"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Details of a sordid rift between two prominent U . S . soccer families \u2014 one that included allegations of domestic abuse against men \u2019 s national team coach Gregg Berhalter and parental complaints about Gio Reyna \u2019 s playing time at the 2022 World Cup \u2014 continued to spill out Monday when the findings of an independent investigation were released .The three - month probe , conducted by the Alston & Bird law firm , concluded Berhalter had not committed any additional acts of violence against his now - wife since 1992 and hadn \u2019 t violated any disclosure rules during his hiring process .He had previously admitted to kicking her while they were dating as students at the University of North Carolina .With that finding , the U . S . Soccer Federation said Berhalter would remain a candidate to return as coach .His contract expired Dec . 31 .\u201c Given the investigators \u2019 conclusion that there is no legal impediment to employing him , Gregg Berhalter remains a candidate to serve as head coach ,\u201d the USSF said in a statement .The governing body said it will not hire a coach until it appoints a new sporting director , a position that oversees all national teams ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Earnie Stewart left the job last month .Anthony Hudson , a World Cup assistant , is the interim coach .The next coach will begin preparing the U . S . team for the 2026 World Cup , which will take place in the United States , Mexico and Canada .Berhalter guided the United States for four years , leading a young squad to two regional championships and a place in the World Cup , where it finished second in group play and lost to the Netherlands in the round of 16 .Investigators said in the report that they \u201c uncovered no facts to show that U . S . Soccer knew of the 1992 Incident when it hired Mr . Berhalter ; no facts to show that similar incidents occurred at any point in the last 31 years ; no facts to show that the 1992 Incident has any nexus to the present or to the workplace ; and no facts to support a claim that Mr . Berhalter presents a risk of harm to others .\u201d Berhalter \u2019 s wife , Rosalind , told investigators she was not injured and didn \u2019 t complain to the university ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_0"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "D . C . United remains an evolving enterprise under Coach Wayne Rooney , still missing pieces and still finding its way through the early stage of the MLS season .At the least , United plays hard for the former English superstar , whose fierce determination as a player in Washington a few years ago won over skeptical fans .On Saturday , for the second time in two appearances at Audi Field this season , United \u2019 s resolve produced another stirring finish \u2014 albeit this time one that yielded only one point .Midfielder Chris Durkin scored a wonderful goal in the 80th minute , ending a night of frustration for goal - averse United in a 1 - 1 draw with Orlando City .Opportunities were aplenty for United ( 1 - 1 - 1 ), but it took Durkin \u2019 s strike to offset rookie Duncan McGuire \u2019 s goal early in the second half .\u201c I wanted to see a reaction [ to Orlando \u2019 s goal ], which I did , so 90 percent of the game I thought was good .The 10 percent , it wasn \u2019 t ,\u201d Rooney said .\u201c We need to make sure when we go into them [ low ] periods , we \u2019 re harder to beat or harder to score against .\u201d He added , \u201c There \u2019 s a lot of positives we can take from it \u2014 just frustrating we didn \u2019 t take three points .\u201d At the top of the box , Durkin cut the ball back on C\u00e9sar Ara\u00fajo , then ripped a 16 - yard , left - footed shot with terrific technique and execution .The ball took flight and beat goalkeeper Pedro Gallese to the far side for Durkin \u2019 s third career MLS goal ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "\u201c I can \u2019 t say I \u2019 ve hit that [ with the left foot ] in training before ,\u201d the right - footed Durkin said , smiling .United goalkeeper Tyler Miller said : \u201c I didn \u2019 t know he had such a good left foot .It was amazing .\u201d Aside from McGuire \u2019 s goal , United was much tighter and tidier defensively than it was against Columbus last weekend .In the attack , however , it remained inefficient with scoring opportunities , and Rooney said , \u201c We could have easily been two or three up in the first half .\u201d Orlando ( 1 - 0 - 2 ) played its first away match in league play after defeating the New York Red Bulls , 1 - 0 , and drawing with FC Cincinnati , 0 - 0 .At the moment , though , the Lions \u2019 priority is the Concacaf Champions League .The visit to Washington fell between legs of a round - of - 16 series with Mexican power Tigres .A 0 - 0 draw in Monterrey , Mexico , on Tuesday positioned them well for the return match in Florida on Wednesday ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_1"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "During the weeks that Poolesville High School has been under construction , several students have reported nausea , headaches and difficulty concentrating .The students and their parents say the symptoms started in February and are a reaction to fumes being emitted from tar used in renovations .They have asked Montgomery County school officials to pause the work until students \u2019 health concerns are addressed .Krisna Becker , a parent of two at the school , said one of her daughters texted her on Feb . 14 asking to be picked up early because of how strong the fumes were from the construction work .Other students and teachers had also been complaining that morning .The school ended up releasing early that day because of an odor that came from \u201c work done outside of school hours and windy conditions ,\u201d Montgomery County Public Schools spokeswoman Jessica Baxter said .\u201c That was the first extreme event that happened ,\u201d Becker , 49 , said in an interview .Since then , the potency of the \u201c fumes \u201d has varied , but \u201c some days it \u2019 s really extreme \u201d and even on the days it \u2019 s not , \u201c it still causes headaches ,\u201d she said ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Construction at Poolesville High began in June 2022 and is expected to be completed in 2024 .The project will renovate and expand the square footage of the school .Becker has headed up a campaign urging other parents to advocate for a temporary stop to the tar work .She wrote about the effects the fumes have had on her daughters , who stay after school sometimes to rehearse for the school \u2019 s production of \u201c Into the Woods .\u201d In her letter to the other parents , Becker also listed safety concerns .In one example , she wrote the project \u2019 s chemical list and material data notes that the work includes the use of an asphalt primer and advises : \u201c Avoid prolonged breathing of vapor and use only in adequate ventilation .Repeated and prolonged overexposure to solvent vapor may cause brain and nervous system damage , respiratory tract irritation , dizziness , or loss of consciousness .\u201d Becker wrote that parents and teachers should have been told about potential health risks in advance ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_2"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Quarterback Aaron Rodgers said in a broadcast interview Wednesday that he intends to continue his NFL career with the New York Jets after 18 seasons with the Green Bay Packers .The four - time league MVP said on \u201c The Pat McAfee Show \u201d that the Packers plan to move on from him as their quarterback .According to Rodgers , the Packers \u2019 trade demands are holding up a prospective deal that would send him to the Jets .\u201c I think since Friday I \u2019 ve made it clear that my intention was to play and my intention was to play for the New York Jets ,\u201d Rodgers said .\u201c And I haven \u2019 t been holding anything up at this point .It \u2019 s been the compensation that the Packers are trying to get for me and kind of digging their heels in .\u2026 It is what it is .The Packers would like to move on .They \u2019 ve let me know that in so many words .They \u2019 ve let other people know that in direct words .\u201d Rodgers met with Jets officials , including team owner Woody Johnson and Coach Robert Saleh , last week in California .\u201c I \u2019 m not offended by any of this ,\u201d Rodgers said ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "\u201c I \u2019 m not a victim by any of this .I don \u2019 t have that mentality .I have nothing but love and appreciation .\u2026 Coming to this reality has been really bittersweet because I was drafted by Green Bay .I \u2026 love that city .I love that organization and [ am ] always going to have love for that organization .But the facts are right now they want to move on .And now so do I .\u201d The NFL \u2019 s free agent market officially opened Wednesday afternoon ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_3"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The early days of Microsoft \u2019 s ChatGPT were something of a replay of internet history \u2014 beginning with excitement about these inventions and ending in trepidation about the harm they could do .ChatGPT and other \u201c large - language models \u201d \u2014 artificially intelligent systems trained on vast troves of text \u2014 can turn into liars or racists or terrorist accomplices that explain how to build dirty bombs .The question is : When that happens , who \u2019 s responsible ?Section 230 of the Communications Decency Act says that services \u2014 from Facebook and Google to movie - review aggregators and mommy blogs with comment sections \u2014 shouldn \u2019 t face liability for most material from third parties .It \u2019 s fairly easy in these cases to distinguish between the platform and the person who \u2019 s posting .Not so with chatbots and AI assistants .Few have grappled with whether Section 230 provides protections to them .Consider ChatGPT .Type in a question , and it provides an answer ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "It doesn \u2019 t merely surface existing content , such as a tweet , video or website originally contributed by someone else , but rather writes a contribution of its own in real time .The law says a person or entity becomes liable if they \u201c develop \u201d content even \u201c in part .\u201d And doesn \u2019 t transforming , say , a list of search results into a summary qualify as development ?What \u2019 s more , the contours of every AI contribution are informed substantially by the AI \u2019 s creators , who have set the rules for their systems and shaped their output by reinforcing behaviors they like and discouraging those they don \u2019 t .Yet at the same time , ChatGPT \u2019 s every answer is , as one analyst put it , a \u201c remix \u201d of third - party material .The tool generates its responses by predicting what word should come next in a sentence based on what words come next in sentences across the web .And as much as creators behind a machine inform its outputs , so too do the users posing queries or engaging in conversation .All this suggests that the degree of protection afforded to AI models may vary by how much a given product is regurgitating versus synthesizing , as well as by how deliberately a user has goaded a model into producing a given reply ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_4"
+            }
+        }
+    ]
+}

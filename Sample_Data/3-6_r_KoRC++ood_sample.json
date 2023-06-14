@@ -1,0 +1,115 @@
+{
+    "adapter_spec": {
+        "instructions": "You are given one document and one anonymized real-world entity with one or more mentions in the passage. Then we will ask your a question about this anonymized entity. The questions cannot be answered solely within the document or the background knowledge. Your task is to leverage world knowledge you have like Wikipedia or wikidata as background knowledge combined with the given document to answer the question related to the anonymized entity. You must output all answers in the end.",
+        "input_prefix": "\n\nDocument: ",
+        "input_suffix": "\n",
+        "reference_prefix": null,
+        "reference_suffix": null,
+        "output_prefix": "\n\nAnswer: ",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 20,
+        "stop_sequences": [
+            "<stop>"
+        ]
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "MIAMI GARDENS, Fla. \u2014 Sixth-seeded Coco Gauff opened her 2023 Miami Open with a 6-4, 6-3 victory over Rebecca Marino on Thursday and advanced to the third round where she will face 27th-seeded Anastasia Potapova. After her victory, Gauff, coming off a quarterfinals appearance at Indian Wells, said in a television interview that it wasn\u2019t her best outing, despite converting five of her nine break points. \u201cIt was a shaky performances honestly,\u201d Gauff said. \u201cI knew it wasn\u2019t going to be a straight forward match, even if I was up a break sometimes.\u201d Gauff came back from a break down twice in the second set to claim her second career win versus Marino. Gauff defeated Marino in the first round at Roland Garros in 2022. Gauff said she was a bit nervous playing in her hometown \u2014 she\u2019s a native of Delray Beach, Florida, a small city about 40 miles north of Hard Rock Stadium, where the tournament is played. Jimmy Butler of the Miami Heat was among those in attendance Thursday. \u201cJimmy Butler is here so I was a little bit nervous when I saw him,\u201d Gauff said with a laugh in her post-match interview. \u201cPlaying home is something I look forward to, but it\u2019s also a little bit of extra pressure because everyone wants you to do well here.\u201d Gauff\u2019s doubles teammate, world No. 3 Jessica Pegula beat Katherine Sebov 6-3, 6-1 and advanced to the third round. She will face fellow American and No. 30 Danielle Collins next. Collins defeated Viktoriya Tomova on Thursday. Pegula made the Miami Open semifinals in 2022 and is among the favorites to win the tournament this year after No. 1-ranked and defending champion Iga Swiatek pulled out of the tournament because of a rib injury. No. 21 Paula Badosa won 7-6(2), 4-6, 6-2 against Laura Siegemund in a match that lasted two hours and 51 minutes. Badosa will face either Elena Rybakina, who defeated Badosa en route to the Indian Wells title, or Anna Kalinskaya. Badosa hit with a ball kid during the match to stay warm after Siegemund called for a medical timeout and left the court for treatment, which took nearly 15 minutes. No. 14-seeded Victoria Azarenka beat Camila Giorgi 6-3, 6-1 to reach the third round, where she will face No. 20 Magda Linette. Azarenka has the second-most career wins at the Miami Open among active women with 38. The mark trails only Venus Williams, who has 67. The 33-year-old Azarenka won the tournament in 2009, 2011 and 2016. In other action, Elise Mertens eliminated No. 8 seed Daria Kasatkina 4-6, 6-2, 6-2 to advance and face No. 29 Petra Martic next; No. 23 Qinwen Zheng picked up a 2-6, 6-1, 6-1 win over Irina-Camelia Begu; and No. 13 seed Beatriz Haddad Maia defeated Tereza Martincov\u00e1 7-6 (4), 0-6, 6-0. ___ More AP tennis: https://apnews.com/hub/tennis and https://twitter.com/AP_Sports\n\nQuestion: What is the name of the parent organization that includes [state of the United States] as a constituent part?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "National Collegiate Athletic Association"
+                        },
+                        "answer": "National Collegiate Athletic Association",
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "D.C. United remains an evolving enterprise under Coach Wayne Rooney, still missing pieces and still finding its way through the early stage of the MLS season. At the least, United plays hard for the former English superstar, whose fierce determination as a player in Washington a few years ago won over skeptical fans. On Saturday, for the second time in two appearances at Audi Field this season, United\u2019s resolve produced another stirring finish \u2014 albeit this time one that yielded only one point. Midfielder Chris Durkin scored a wonderful goal in the 80th minute, ending a night of frustration for goal-averse United in a 1-1 draw with Orlando City. Opportunities were aplenty for United (1-1-1), but it took Durkin\u2019s strike to offset rookie Duncan McGuire\u2019s goal early in the second half. \u201cI wanted to see a reaction [to Orlando\u2019s goal], which I did, so 90 percent of the game I thought was good. The 10 percent, it wasn\u2019t,\u201d Rooney said. \u201cWe need to make sure when we go into them [low] periods, we\u2019re harder to beat or harder to score against.\u201d He added, \u201cThere\u2019s a lot of positives we can take from it \u2014 just frustrating we didn\u2019t take three points.\u201d At the top of the box, Durkin cut the ball back on C\u00e9sar Ara\u00fajo, then ripped a 16-yard, left-footed shot with terrific technique and execution. The ball took flight and beat goalkeeper Pedro Gallese to the far side for Durkin\u2019s third career MLS goal. \u201cI can\u2019t say I\u2019ve hit that [with the left foot] in training before,\u201d the right-footed Durkin said, smiling. United goalkeeper Tyler Miller said: \u201cI didn\u2019t know he had such a good left foot. It was amazing.\u201d Aside from McGuire\u2019s goal, United was much tighter and tidier defensively than it was against Columbus last weekend. In the attack, however, it remained inefficient with scoring opportunities, and Rooney said, \u201cWe could have easily been two or three up in the first half.\u201d Orlando (1-0-2) played its first away match in league play after defeating the New York Red Bulls, 1-0, and drawing with FC Cincinnati, 0-0. At the moment, though, the Lions\u2019 priority is the Concacaf Champions League. The visit to Washington fell between legs of a round-of-16 series with Mexican power Tigres. A 0-0 draw in Monterrey, Mexico, on Tuesday positioned them well for the return match in Florida on Wednesday. With that in mind, Orlando Coach Oscar Pareja made six lineup changes Saturday. Through three matches this year, the Lions had not conceded a goal. United was coming off a scoreless effort at Columbus, and for the first time, attacker Ted Ku-DiPietro, the hero on opening night, was in the lineup, replacing Nigel Robertha (illness). Center back Derrick Williams and right back Ruan, a former Orlando player, also made their first starts. United set the terms but continued to labor in the box. In the 27th minute, Christian Benteke was alone 12 yards out after settling Durkin\u2019s cross, but with most of the net at his pleasure, he shot too close to Gallese, who made a reaction save. Seven minutes later, Gallese thwarted Ku-DiPietro\u2019s 12-yard one-timer.\n\nQuestion: What specific tournament or league did [human] participate in as a competitor?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Champions League"
+                        },
+                        "answer": "Champions League",
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Six months after its New Shepard rocket suffered a failure during flight, Blue Origin said Friday its review of the incident pinpointed a problem with its engine nozzle and that it is expecting to return to flight \u201csoon.\u201d In September, the rocket lifted off and flew for just over a minute before bright flames flashed from the booster and the capsule\u2019s emergency abort system kicked in, propelling it away from the rocket. The mission carried only science experiments; no one was on board, and no one was injured on the ground. In a statement Friday, Blue Origin, the space venture founded by Amazon executive chairman Jeff Bezos, said that it would refly the mission, again carrying scientific payloads. (Bezos owns The Washington Post.) A flight with people could come later. The vehicle is designed to carry as many as six people to the edge of space and back on suborbital tourist trips that allow passengers to experience weightlessness and view the earth from above. In the statement, Blue Origin said its investigation, which was overseen by the Federal Aviation Administration and included members of the National Transportation Safety Board, concluded that the problem was caused by a failure of the engine nozzle, which experienced \u201ctemperatures that exceeded the expected and analyzed values of the nozzle material.\u201d Engineers are \u201cimplementing corrective actions, including design changes to the combustion chamber and operating parameters,\u201d the statement said. \u201cAdditional design changes to the nozzle have improved structural performance under thermal and dynamic loads.\u201d The FAA said in a statement that it is reviewing Blue Origin\u2019s mishap report but that the investigation remains open. \u201cFAA approval is required to close the investigation and for the New Shepard system to return to flight.\u201d It was unclear how long that could take. While the booster was lost, the capsule and the 36 payloads it was carrying landed safely under parachutes and can fly again, Blue Origin said. The booster, which under normal circumstances falls back to Earth and touches down softly on a landing pad so that it can be reused, was a total loss. The company was able to recover all the debris from the rocket within the designated hazard area, it said. Bezos flew on the first flight with people in 2021. It had since flown five other missions with people on board, including one with Star Trek actor William Shatner and television commentator Michael Strahan. It has not flown since the September incident.\n\nQuestion: What is the home country of [daily newspaper]?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "United States"
+                        },
+                        "answer": "United States",
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Despite their small stature, garden gnomes spark big debates. Are they chintzy or classy? Lovable or loathsome? The perfect addition to a garden bed or an easy way to ruin your landscaping? No matter your opinion, there\u2019s no denying that these little folks are conversation starters. The story of how these sometimes whimsical, sometimes comical, sometimes vulgar statues became fixtures in yards and gardens is as colorful and complex as the creatures themselves. \u201cThat\u2019s the trouble with gnomes,\u201d says Twigs Way, garden historian and author of \u201cGarden Gnomes: A History.\u201d \u201cThey come from lots of different kinds of sources.\u201d There are plenty of little characters in mythologies from around the world \u2014 including the Egyptian god Bes, and brownies, house spirits in British and Scottish folklore \u2014 and small stone figures started appearing in Italian gardens during the Renaissance. However, according to Way, what have become known as garden gnomes in the United States and England can be traced to dwarf statues that originated in Germany\u2019s Black Forest region around the early 19th century. They were initially carved out of wood; by the mid-19th century, they were cast in terra cotta and porcelain. They weren\u2019t a garden fixture, though; they were hand-painted, usually about three feet tall and expensive, so they were intended to be displayed inside as pieces of art. Although those figures were often depicted in what has become their trademark red conical hats, blue shirts and boots, they didn\u2019t strike lazy or lackadaisical poses. They were gardeners, carpenters, fishermen, even hunters. \u201cTo see pictures of gnomes with shotguns kind of took me aback,\u201d says Way, who uncovered such images in old catalogues. Sir Charles Isham gets credit for bringing the dwarves into Britain and out into the garden, importing a number of them from Germany in the 1840s to decorate his massive rockery garden at Lamport Hall, his estate in Northamptonshire. It wasn\u2019t the most auspicious introduction. \u201cHe was extremely eccentric,\u201d Way says. \u201cThe fact that the first person that starts collecting them in England is a pro-socialist vegetarian teetotaler who believes dwarfs and little folk are real is not a great way to establish their legitimacy.\u201d The next ambassador of the small statues was another oddball: Sir Frank Crisp, whose roughly 62-acre estate in Henley-on-Thames, Friar Park, was dotted with German garden gnomes and open to the public in the early 20th century. (George Harrison of the Beatles bought the property in 1970 and claimed to unearth a few of the original gnomes, which he posed with on the cover of his album \u201cAll Things Must Pass.\u201d) Wealthy landowners began adopting the gnomes \u2014 as they were commonly called by then \u2014 as sophisticated garden accessories, thanks to Isham and Crisp. Photos of them even appeared in Britain\u2019s arbiter of high-end style, Country Life magazine. In 1912, gnomes were featured at the Royal International Horticultural Exhibition, a forerunner of the Chelsea Flower Show, which began the following year and didn\u2019t allow gnomes to be featured, because trendsetters of the time determined they weren\u2019t tasteful enough. Their 15 minutes of fame with the posh crowd was almost over.\n\nQuestion: What continent is [Rechtsstaat] situated in?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Europe"
+                        },
+                        "answer": "Europe",
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "In the geopolitics of the 1970s, the United States\u2019 seismic decision to normalize relations with Communist China and lift a ban on sales of sensitive military technology to Beijing was known as \u201cplaying the China card\u201d to thwart the Soviet Union. With President Xi Jinping\u2019s high-profile three-day visit to Moscow this month, China has shown it is willing to play what might be called the Russia card to counter what Mr. Xi considers to be U.S. attempts to surround China and contain its economic and military rise. This growing alliance between America\u2019s two greatest strategic and military challengers has the potential to shift the global order as profoundly as the United States did a half-century ago. America and its democratic allies had better be ready to respond. China and Russia share a common apprehension of encirclement by the United States and NATO. Russia sees NATO\u2019s eastward expansion as an existential threat \u2014 that was the main stated justification for its invasion of Ukraine. China, meanwhile, fears the United States is trying to create an \u201cIndo-Pacific NATO\u201d with a string of Asian defense agreements from the Philippines to Australia. Moreover, China and Russia both have a disdain for democratic values and a rules-based world order, which they see as outdated and dominated by the United States. Theirs is a confidence in the superiority of their autocratic governing systems. When the two leaders met, Mr. Putin congratulated Mr. Xi on his \u201creelection\u201d to an unprecedented third term as president. Mr. Xi said he expected Mr. Putin to prevail in his own reelection in 2024. Russia is clearly now the junior partner in this \u201cno limits\u201d friendship between Moscow and Beijing. Shorn of Western markets and its economy hammered by sanctions, Russia needs China to increase its purchases of oil, gas and grain, and to supply some of the Western goods that have disappeared from the shelves. China has also continued to supply Russia with aerial drones and drone parts, as well as semiconductors. But there have been no reports so far of Beijing providing lethal weapons \u2014 something the Biden administration has warned would be crossing a red line. Despite its openly pro-Russia stance, China has suggested it might be a potential peacemaker in Ukraine. There was some thin hope this might actually be the case, after China helped broker a diplomatic rapprochement between Iran and Saudi Arabia after a seven-year break. And Mr. Xi went to Moscow touting a supposed 12-point \u201cpeace plan\u201d for ending the conflict. But unsurprisingly, it turned out to be no more than a series of bromides about the need for dialogue and restraint. Meanwhile, Mr. Xi has shown no interest in going to Kyiv to meet with Ukrainian President Volodymyr Zelensky, as have President Biden and other world leaders. Indeed, Japanese Prime Minister Fumio Kishida made a surprise visit to Kyiv the same day Mr. Xi was being feted in the Kremlin. President Biden has framed the war in Ukraine as \u201ca battle between democracy and autocracy, between liberty and repression, between a rules-based order and one governed by brute force.\u201d While his line of argument is true, it is of limited persuasiveness with Mr. Xi, who is trying to peddle the idea of Western-style democracy as a spent force.\n\nQuestion: What geographical continent encompasses [Rechtsstaat]?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Europe"
+                        },
+                        "answer": "Europe",
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train"
+            }
+        }
+    ]
+}

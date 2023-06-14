@@ -1,0 +1,118 @@
+{
+    "adapter_spec": {
+        "instructions": "",
+        "input_prefix": "Conceptual property judgment: ",
+        "input_suffix": "Please answer true or false.",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "Answer: ",
+        "output_suffix": "",
+        "instance_prefix": "",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 128,
+        "stop_sequences": []
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Is the statement 'beach volleyball players have (part) cells.' true or false?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "true"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Is the statement 'military units use Web sites to distribute regulations and data.' true or false?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "false"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Is the statement 'bus companies are hose.' true or false?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "false"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Is the statement 'A member of parliament is Order' true or false?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "false"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Is the statement 'Bodybuilders have more muscular mass than is naturally possible thanks to anabolic steroids.' true or false?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "true"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "adapter_spec": {
+        "instructions": "Please give answers to the following questions about knowledge. Note: If there are more than one answer, print them all and separate them with a semicolon (;). Please do not give anything other than the answers.",
+        "input_prefix": "Question: ",
+        "input_suffix": "\n",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "Answer: ",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 64,
+        "stop_sequences": [],
+        "decoding_parameters": {
+            "temperature": 1
+        },
+        "ouput_format": "list"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Where was N. R. Narayana Murthy born?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Mysore"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "2_high_freq_ent8186"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Who is the performer of Tears on My Pillow?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Johnny Tillotson"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "1_low_freq_ent4818"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "What is writing language of African Journal of Biomedical Research?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "English"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "1_low_freq_ent6889"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "What is the destination point of American Airlines Flight 11?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Los Angeles International Airport;California"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "2_high_freq_ent665"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "On what day(s) is Labour Day celebrated/occurs?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "first Monday in May;first Monday in September;May 1"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "2_high_freq_ent4541"
+            },
+            "request": {}
+        }
+    ]
+}

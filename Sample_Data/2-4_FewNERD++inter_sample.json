@@ -1,0 +1,118 @@
+{
+    "adapter_spec": {
+        "instructions": "Please find all entities in the provided texts and classify them into different types.",
+        "input_prefix": "",
+        "input_suffix": "",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "",
+        "output_suffix": "",
+        "instance_prefix": "",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 128,
+        "stop_sequences": []
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "All but four of its 42 engraved copperplate illustrations were taken almost directly from Andreas Vesalius 's `` De humani corporis fabrica `` ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "All but four of its 42 engraved copperplate illustrations were taken almost directly from [ Andreas Vesalius | person-artist/author ] 's `` [ De humani corporis fabrica | art-other ] `` ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Apple 's use of translucent , candy-colored plastics inspired similar industrial designs in other consumer products ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "[ Apple | organization-company ] 's use of translucent , candy-colored plastics inspired similar industrial designs in other consumer products ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "In 1995 he received the Goethe Prize from the Hesse Ministry of Science and Arts and in 2006 the Goethe Prize from the City of Frankfurt ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "In 1995 he received the [ Goethe Prize | other-award ] from the [ Hesse Ministry of Science and Arts | organization-other ] and in 2006 the [ Goethe Prize | other-award ] from the [ City of Frankfurt | location-GPE ] ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "In 1985 their work was repeated by Harold Kroto , James R. Heath , Sean O'Brien , Robert Curl , and Richard Smalley at Rice University , who recognized the structure of C60 as buckminsterfullerene ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "In 1985 their work was repeated by Harold Kroto , James R. Heath , Sean O'Brien , Robert Curl , and Richard Smalley at [ Rice University | organization-education ] , who recognized the structure of C60 as buckminsterfullerene ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The watercourses on Gullfjellet supports large parts of the Bergen region with piped water ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The watercourses on [ Gullfjellet | location-mountain ] supports large parts of the [ Bergen | location-GPE ] region with piped water ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+{
+    "adapter_spec": {
+        "instructions": "Please follow the above demonstration, extract relations from the [Question text].\nNote the relation need to be in the predefined set of relations.\nThe output format required to is the same as the demonstration, format:(<entity_ID>, relation, <entity_ID>).\nThe predefined set of relations:\n{head of government, country, place of birth, place of death, father, mother, spouse, country of citizenship, continent, instance of, head of state, capital, official language, position held, child, author, member of sports team, director, screenwriter, educated at, composer, member of political party, employer, founded by, league, publisher, owned by, located in the administrative territorial entity, genre, operator, religion, contains administrative territorial entity, follows, followed by, headquarters location, cast member, producer, award received, creator, parent taxon, ethnic group, performer, manufacturer, developer, series, sister city, legislative body, basin country, located in or next to body of water, military branch, record label, production company, location, subclass of, subsidiary, part of, original language of work, platform, mouth of the watercourse, original network, member of, chairperson, country of origin, has part, residence, date of birth, date of death, inception, dissolved, abolished or demolished, publication date, start time, end time, point in time, conflict, characters, lyrics by, located on terrain feature, participant, influenced by, location of formation, parent organization, notable work, separated from, narrative location, work location, applies to jurisdiction, product or material produced, unemployment rate, territory claimed by, participant of, replaces, replaced by, capital of, languages spoken, written or signed, present in work, sibling}\n",
+        "input_prefix": "",
+        "input_suffix": "\n",
+        "reference_prefix": "",
+        "reference_suffix": "\n",
+        "output_prefix": "",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 4,
+        "max_eval_instances": 100,
+        "max_tokens": 256,
+        "stop_sequences": [
+            "\n"
+        ],
+        "decoding_parameters": {},
+        "ouput_format": "string"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:Jakarta International Film Festival\nText: The entity0 Jakarta International Film Festival entity0 ( entity1 JIFFEST entity1 ) is the major film festival of entity2 Indonesia entity2 held every entity3 December entity3 in the capital , entity4 Jakarta entity4 , since entity5 1999 entity5 . \n The number of entity6 Indonesian entity6 films shown at the festival had grown from entity7 four entity7 in entity5 1999 entity5 to around entity8 100 entity8 by entity9 2009 entity9 . \n Since entity10 2006 entity10 , entity1 JIFFEST entity1 has hosted an entity6 Indonesian entity6 Feature Film Competition with foreign film professionals acting as juries . \n entity1 JIFFEST entity1 's script development competition and workshop winners include entity11 Wahyu Aditya entity11 ( entity12 2004 entity12 ) , entity13 World Champion International Young Creative Entrepreneur of the Year entity13 ( entity14 2007 entity14 ) ; entity15 Tumpal Tampubolon entity15 ( entity16 2005 entity16 ) , entity17 Asian Young Filmmakers Fellow Korea entity17 ( entity18 2008 entity18 ) ; entity19 Salman Aristo entity19 ( entity10 2006 entity10 ) , writer of entity20 Ayat - Ayat Cinta entity20 ( entity14 2007 entity14 ) , entity21 Laskar Pelangi entity21 ( entity18 2008 entity18 ) , and entity22 Garuda di Dadaku entity22 ( entity9 2009 entity9 ) ; entity23 Yuli Andari Merdekaningtyas entity23 ( entity10 2006 entity10 ) , and director of entity24 Suster Apung entity24 , winner of entity25 Eagle Awards Metro TV entity25 ( entity10 2006 entity10 ) . \n The festival is on a shaky financial footing and is hoping to continue by switching its funding source from foreign donors to government grants and private donations . \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity2,capital,entity4)\n(entity2,contains administrative territorial entity,entity4)\n(entity4,capital of,entity2)\n(entity4,country,entity2)\n(entity4,located in the administrative territorial entity,entity2)\n(entity4,country,entity6)\n(entity4,located in the administrative territorial entity,entity6)\n(entity4,capital of,entity6)\n(entity0,country,entity2)\n(entity0,inception,entity5)\n(entity0,country,entity6)\n(entity6,capital,entity4)\n(entity6,contains administrative territorial entity,entity4)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 2244
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:List of companies of France\nText: entity0 France entity0 is a country whose territory consists of metropolitan entity0 France entity0 in western entity1 Europe entity1 , as well as several overseas regions and territories . \n A member of the entity2 Group of 7 entity2 ( formerly entity3 G8 entity3 ) leading industrialised countries , , it is ranked as the world 's ninth - largest and the entity4 EU entity4 's second - largest economy by purchasing power parity . \n With entity5 31 entity5 of the entity6 500 entity6 biggest companies in the world in entity7 2015 entity7 , entity0 France entity0 ranks fourth in the entity8 Fortune Global 500 entity8 , ahead of entity9 Germany entity9 and the entity10 UK entity10 . \n According to the entity11 World Trade Organization entity11 ( entity11 WTO entity11 ) , in entity12 2009 entity12 entity0 France entity0 was the world 's sixth - largest exporter and the fourth - largest importer of manufactured goods . \n entity13 French entity13 companies have maintained key positions in the insurance and banking industries : entity14 AXA entity14 is the world 's largest insurance company . \n The leading entity13 French entity13 banks are entity15 BNP Paribas entity15 and the entity16 Cr\u00e9dit Agricole entity16 , ranking as the world 's largest and sixth - largest banks in entity17 2010 entity17 ( by assets ) , while the entity18 Soci\u00e9t\u00e9 G\u00e9n\u00e9rale entity18 group was ranked the world 's eighth - largest in entity12 2009 entity12 . \n For further information on the types of business entities in this country and their abbreviations , see \" entity19 Business entities in France entity19 \" . \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity0,continent,entity1)\n(entity0,member of,entity3)\n(entity0,member of,entity4)\n(entity0,member of,entity11)\n(entity0,member of,entity14)\n(entity3,participant,entity0)\n(entity4,contains administrative territorial entity,entity0)\n(entity15,country,entity0)\n(entity16,country,entity0)\n(entity18,country,entity0)\n(entity2,participant,entity0)\n(entity2,replaced by,entity3)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 2700
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:Have You Ever Been in Love (song)\nText: \" entity0 Have You Ever Been in Love entity0 \" is a song recorded by entity1 Canadian entity1 recording artist entity2 Celine Dion entity2 , included first on her seventh entity3 English entity3 studio album entity4 A New Day Has Come entity4 ( entity5 2002 entity5 ) and later , on her entity6 eight entity6 entity3 English entity3 studio album entity7 One Heart entity7 ( entity8 2003 entity8 ) . \n The song is a power ballad , written by entity9 Anders Bagge entity9 , entity10 Peer \u00c5str\u00f6m entity10 , entity11 Tom Nichols entity11 , entity12 Daryl Hall entity12 and entity13 Laila Bagge entity13 , while production was handled by entity14 Bagge & Peer entity14 . \n \" entity0 Have You Ever Been in Love entity0 \" builds from a gentle , piano - laced opening into a theatrical , string - framed climax . \n The song received acclaim from music critics , while being reviewed in both albums . \n Many critics called it a classic - sounding ballad and one of the strongest cuts from the album . \n Critics also noted similarities between entity2 Dion entity2 and entity15 Barbra Streisand entity15 . \n \" entity0 Have You Ever Been in Love entity0 \" was released on entity16 14 April 2003 entity16 , as entity7 One Heart entity7 's second ( promotional only ) single in the entity17 United States entity17 and entity1 Canada entity1 , while on entity18 3 November 2003 entity18 , it was released as the third commercial single in selected entity19 European entity19 countries . \n The song spent entity20 fourteen weeks entity20 at number 2 on the entity17 US entity17 entity21 Hot Adult Contemporary Tracks entity21 , setting a record for most weeks at the second position . \n The music video was shot between entity22 29\u201330 April 2003 entity22 in entity23 Los Angeles entity23 and released on entity24 2 June 2003 entity24 . \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity0,part of,entity4)\n(entity0,part of,entity7)\n(entity0,performer,entity2)\n(entity0,publication date,entity16)\n(entity4,publication date,entity5)\n(entity4,followed by,entity7)\n(entity4,performer,entity2)\n(entity7,follows,entity4)\n(entity7,performer,entity2)\n(entity7,publication date,entity8)\n(entity2,country of citizenship,entity1)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 149
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:Brian McGuinness\nText: entity0 Brian McGuinness entity0 ( born entity0 Bernard Francis McGuinness entity0 , entity1 22 October 1927 entity1 , in entity2 Wrexham entity2 , entity3 United Kingdom entity3 ) is a entity4 British entity4 philosopher . \n Formerly a pupil of entity5 RM Hare entity5 , entity6 McGuinness entity6 has become a noted expert in the works of entity7 Ludwig Wittgenstein entity7 . \n entity6 McGuinness entity6 was a Fellow and Tutor at entity8 Queen 's College entity8 in entity9 Oxford University entity9 from entity10 1953 entity10 to entity11 1988 entity11 , and took a post at the entity12 Netherlands Institute for Advanced Study entity12 . \n Since entity13 1990 entity13 , he is a professor at the entity14 University of Siena entity14 , entity15 Italy entity15 . \n From entity13 1990 entity13 to entity16 1993 entity16 , he was director of the faculty of philosophy and social sciences of this university . \n During his time at entity17 Queen 's entity17 , he was an invited speaker at the entity18 Oxford Socratic Club entity18 , speaking with entity19 J. D. Mabbott entity19 on \" entity20 The Problem of Free Will entity20 \" on entity21 Nov. 14 , 1955 entity21 . \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity0,date of birth,entity1)\n(entity0,place of birth,entity2)\n(entity0,country of citizenship,entity3)\n(entity2,country,entity3)\n(entity8,country,entity3)\n(entity8,part of,entity9)\n(entity14,country,entity15)\n(entity6,date of birth,entity1)\n(entity6,place of birth,entity2)\n(entity6,country of citizenship,entity3)\n(entity9,has part,entity8)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 1103
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        }
+    ]
+}

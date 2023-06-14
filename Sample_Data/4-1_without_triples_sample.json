@@ -1,0 +1,117 @@
+{
+    "adapter_spec": {
+        "instructions": "",
+        "input_prefix": "",
+        "input_suffix": "",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 256,
+        "stop_sequences": [],
+        "decoding_parameters": {
+            "temperature": 0
+        },
+        "ouput_format": "string"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "On April 12 , 2015 , Freddie Carlos Gray , Jr. , a 25-year-old black man , was arrested by the Baltimore Police Department for possessing what the police alleged was an illegal knife under Baltimore law .While being transported in a police van , Gray fell into a coma and was taken to a trauma center .Gray died on April 19 , 2015 ; his death was ascribed to injuries to his spinal cord .On April 21 , 2015 , pending an investigation of the incident , six Baltimore police officers were suspended with pay .The circumstances of the injuries were initially unclear ; eyewitness accounts suggested that the officers involved used unnecessary force against Gray during the arrest\u2014a claim denied by all officers involved .Commissioner Anthony W. Batts reported that , contrary to department policy , the officers did not secure him inside the van while driving to the police station ; this policy had been put into effect six days prior to Gray 's arrest , following review of other transport-related injuries sustained during police custody in the city , and elsewhere in the country during the preceding years .The medical investigation found that Gray had sustained the injuries while in transport .The medical examiner 's office concluded that Gray 's death could not be ruled an accident , and was instead a homicide , because officers failed to follow safety procedures `` through acts of omission . ''"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "On May 1 , 2015 , the Baltimore City State 's Attorney , Marilyn Mosby , announced her office had filed charges against six police officers after the medical examiner 's report ruled Gray 's death a homicide .The prosecutors stated that they had probable cause to file criminal charges against the six police officers who were believed to be involved in his death .The officer driving the van was charged with second-degree `` depraved-heart '' murder for his indifference to the considerable risk that Gray might be killed , and others were charged with crimes ranging from manslaughter to illegal arrest .On May 21 , a grand jury indicted the officers on most of the original charges filed by Mosby with the exception of the charges of illegal imprisonment and false arrest , and added charges of reckless endangerment to all the officers involved .Gray 's hospitalization and subsequent death resulted in an ongoing series of protests .On April 25 , 2015 , a major protest in downtown Baltimore turned violent , resulting in 34 arrests and injuries to 15 police officers .After Gray 's funeral on April 27 , civil disorder intensified with looting and burning of local businesses and a CVS drug store , culminating with a state of emergency declaration by Governor Larry Hogan , Maryland National Guard deployment to Baltimore , and the establishment of a curfew ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_0"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The Thirty Years ' War was a war fought primarily in Central Europe between 1618 and 1648 .One of the most destructive conflicts in human history , it resulted in eight million fatalities not only from military engagements but also from violence , famine , and plague .Casualties were overwhelmingly and disproportionately inhabitants of the Holy Roman Empire , most of the rest being battle deaths from various foreign armies .The deadly clashes ravaged Europe ; 20 percent of the total population of Germany died during the conflict and there were losses up to 50 percent in a corridor between Pomerania and the Black Forest .In terms of proportional German casualties and destruction , it was surpassed only by the period January to May 1945 ; one of its enduring results was 19th-century Pan-Germanism , when it served as an example of the dangers of a divided Germany and became a key justification for the 1871 creation of the German Empire ( although it excluded the German-speaking parts of the Austro-Hungarian Habsburg empire ) .Initially a war between various Protestant and Catholic states in the fragmented Holy Roman Empire , it gradually developed into a more general conflict involving most of the European great powers .These states employed relatively large mercenary armies , and the war became less about religion and more of a continuation of the France\u2013Habsburg rivalry for European political pre-eminence .The war was preceded by the election of the new Hapsburg Holy Roman Emperor , Ferdinand II , who tried to impose religious uniformity on his domains , forcing Roman Catholicism on its peoples .The northern Protestant states , angered by the violation of their rights to religious liberty , which had been granted in the Peace of Augsburg , banded together to form the Protestant Union .Ferdinand II was a devout Roman Catholic and much less tolerant than his predecessor , Rudolf II , who ruled from the largely Protestant city of Prague .Ferdinand 's policies were considered strongly pro-Catholic and anti-Protestant .These events caused widespread fears throughout northern and central Europe , and triggered the Protestant Bohemians living in the then relatively loose dominion of Habsburg Austria ( and also with the Holy Roman Empire ) to revolt against their nominal ruler , Ferdinand II ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "After the so-called Defenestration of Prague deposed the Emperor 's representatives in Prague , the Protestant estates and Catholic Habsburgs started gathering allies for war .The Protestant Bohemians ousted the Habsburgs and elected the Calvinist Frederick V , Elector of the Rhenish Palatinate as the new king of the Kingdom of Bohemia .Frederick took the offer without the support of the Protestant Union .The southern states , mainly Roman Catholic , were angered by this .Led by Bavaria , these states formed the Catholic League to expel Frederick in support of the Emperor .The Empire soon crushed the perceived Protestant rebellion in the Battle of White Mountain , executing leading Bohemian aristocrats shortly after .Protestant rulers across Europe unanimously condemned the Emperor 's action .After the atrocities committed in Bohemia , Saxony finally gave its support to the Protestant Union and decided to fight back .Sweden , at the time a rising military power , soon intervened in 1630 under its king Gustavus Adolphus , transforming what had been simply the Emperor 's attempt to curb the Protestant states into a full-scale war in Europe ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_1"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The Second Battle of the Aisne ( or , 16 April \u2013 mid-May 1917 ) was the main part of the Nivelle Offensive , a Franco-British attempt to inflict a decisive defeat on the German armies in France .The Entente strategy was to conduct offensives from north to south , beginning with an attack by the British Expeditionary Force ( BEF ) then the main attack by two French army groups on the Aisne .General Robert Nivelle planned the offensive in December 1916 , after he replaced Joseph Joffre as Commander-in-Chief of the French Army .The objective of the attack on the Aisne was to capture the prominent , east\u2013west ridge of the Chemin des Dames , north-east of Paris and then advance northwards to capture the city of Laon .When the French armies met the British advancing from the Arras front , the Germans would be pursued towards Belgium and the German frontier .The offensive began on 9 April , when the British began the Battle of Arras .On 16 April , the ( GAR , Reserve Army Group ) attacked the Chemin des Dames and the next day , the Fourth Army , part of ( GAC , Central Army Group ) , near Reims to the south-east , began the Battle of the Hills ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The Chemin des Dames ridge had been quarried for stone for centuries , leaving a warren of caves and tunnels which were used as shelters by German troops to escape the French bombardment .The offensive met massed German machine-gun and artillery fire , which inflicted many casualties and repulsed the French infantry at many points .The French achieved a substantial tactical success and took but failed to defeat decisively the German armies .The failure had a traumatic effect on the morale of the French army and many divisions mutinied .Nivelle was superseded by General Philippe P\u00e9tain , who adopted a strategy of `` healing and defence '' , to resume the wearing-out of the German Army while conserving French infantry ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_2"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The Indo-Pakistani War of 1965 was a culmination of skirmishes that took place between April 1965 and September 1965 between Pakistan and India .The conflict began following Pakistan 's Operation Gibraltar , which was designed to infiltrate forces into Jammu and Kashmir to precipitate an insurgency against Indian rule .India retaliated by launching a full-scale military attack on West Pakistan .the unk war caused thousands of casualties on both sides and witnessed the largest engagement of armored vehicles and the largest tank battle since world war ii .Hostilities between the two countries ended after a United Nations-mandated ceasefire was declared following diplomatic intervention by the Soviet Union and the United States , and the subsequent issuance of the Tashkent Declaration .Much of the war was fought by the countries ' land forces in Kashmir and along the border between India and Pakistan ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "This war saw the largest amassing of troops in Kashmir since the Partition of India in 1947 , a number that was overshadowed only during the 2001\u20132002 military standoff between India and Pakistan .Most of the battles were fought by opposing infantry and armoured units , with substantial backing from air forces , and naval operations .Many details of this war , like those of other Indo-Pakistani Wars , remain unclear .India had the upper hand over Pakistan when the ceasefire was declared .although the two countries fought to a standoff , the conflict is seen as a strategic and political defeat for pakistan , as it had neither succeeded in fomenting insurrection in kashmir nor had it been able to gain meaningful support at an international level ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_3"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Hurricane Ingrid was one of two tropical cyclones , along with Hurricane Manuel , to strike Mexico within a 24\u2011hour period , the first such occurrence since 1958 .Ingrid was the ninth named storm and second hurricane of the 2013 Atlantic hurricane season .It formed on September 12 in the Gulf of Mexico from a broad disturbance that also spawned Manuel in the eastern Pacific .After initially moving westward toward Veracruz , Ingrid turned northeastward away from the coast .Favorable conditions allowed it to attain hurricane status on September 14 , and the next day Ingrid attained peak winds of 140 km/h ( 85 mph ) .Subsequently , increased wind shear weakened the convection as the storm turned more to the northwest and west .On September 16 , Ingrid made landfall just south of La Pesca , Tamaulipas in northeastern Mexico as a strong tropical storm , and dissipated the next day ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The hurricane was also the last one to form in the Gulf of Mexico until Hurricane Hermine in 2016 .The combined impacts of hurricanes Ingrid and Manuel affected two-thirds of Mexico , killing 192 people and causing MXN $ 75 billion , or roughly US $ 5.7 billion in damage .Most of the effects were due to Manuel , though Ingrid was directly responsible for at least 32 deaths and $ 20 billion ( MXN , US $ 1.5 billion ) in damage .The two storms precipitated of water , the equivalent of filling every dam in Mexico .Rainfall from the storm peaked at in Tuxpan , Veracruz ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "without_triples_sample_4"
+            }
+        }
+    ]
+}

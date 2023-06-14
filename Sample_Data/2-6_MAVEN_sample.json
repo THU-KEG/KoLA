@@ -1,0 +1,116 @@
+{
+    "adapter_spec": {
+        "instructions": "List the events that are mentioned in the given context and highlight the most related word or phrase using the <mark> tag for each event. There might be more than one event per context provided or no event in the context.\nFor each tagged event, also generate its corresponding event type. The event type must be one of the following types.\n[Rite,Becoming,Use_firearm,Committing_crime,Expansion,Renting,Cause_change_of_position_on_a_scale,Ingestion,Aiming,Sign_agreement,Patrolling,Perception_active,Surrounding,Coming_to_be,Risk,Containing,Presence,Change,Social_event,Institutionalization,Giving,Preventing_or_letting,Control,Education_teaching,Labeling,Commerce_buy,Publishing,Adducing,Quarreling,Bringing,Scouring,Award,Attack,Rewards_and_punishments,Warning,Communication,Suspicion,Reveal_secret,Exchange,GetReady,Terrorism,Recording,Placing,Arriving,Surrendering,Hold,Hindering,Causation,Temporary_stay,Employment,Change_sentiment,Besieging,Defending,Killing,Having_or_lacking_access,Cause_to_be_included,Practice,Removing,Justifying,Arrest,Hostile_encounter,Forming_relationships,Creating,Escaping,Filling,Ratification,Vocalizations,Check,Motion_directional,Supporting,Bodily_harm,Sending,Lighting,Reforming_a_system,Preserving,Agree_or_refuse_to_act,Resolve_problem,Departing,Process_end,Convincing,Conquering,Revenge,Arranging,Manufacturing,Prison,Wearing,Legal_rulings,Cure,Assistance,Commerce_pay,Scrutiny,Commitment,Collaboration,Military_operation,Research,Building,Breathing,Telling,Incident,Participation,Supply,Destroying,Kidnapping,Testing,Earnings_and_losses,Commerce_sell,Hiding_objects,Action,Releasing,Dispersal,Extradition,Cause_to_make_progress,Damaging,Emptying,Getting,Recovering,Robbery,Change_tool,GiveUp,Expend_resource,Coming_to_believe,Change_of_leadership,Theft,Process_start,Confronting_problem,Imposing_obligation,Openness,Using,Protest,Self_motion,Name_conferral,Response,Submitting_documents,Emergency,Limiting,Create_artwork,Deciding,Change_event_time,Connect,Achieve,Request,Catastrophe,Rescuing,Cause_to_amalgamate,Death,Bearing_arms,Traveling,Reporting,Influence,Statement,Know,Motion,Choosing,Judgment_communication,Violence,Come_together,Legality,Carry_goods,Expressing_publicly,Becoming_a_member,Criminal_investigation,Cause_change_of_strength,Writing,Receiving,Being_in_operation,Competition,Body_movement,Cost]\n",
+        "input_prefix": "Context: ",
+        "input_suffix": "\n\n",
+        "output_prefix": "",
+        "output_suffix": "\n\n",
+        "instance_prefix": "",
+        "max_train_instances": 16,
+        "max_eval_instances": 100,
+        "max_tokens": 200,
+        "stop_sequences": [],
+        "decoding_parameters": {
+            "temperature": 0.2,
+            "top_p": 0.95
+        },
+        "ouput_format": "string"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "BOAC Flight 777-A was a scheduled British Overseas Airways Corporation civilian airline flight from Portela Airport in Lisbon , Portugal to Whitchurch Airport near Bristol , England ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Output: BOAC Flight 777-A was a scheduled British Overseas Airways Corporation civilian airline flight from Portela Airport in Lisbon , Portugal to Whitchurch Airport near Bristol , England .\n\nEvents:"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "0"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "In the days leading up to June 19 , 2013 , Alberta , Canada , experienced heavy rainfall that triggered catastrophic flooding described by the provincial government as the worst in Alberta 's history ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Output: In the days leading up to June 19 , 2013 , Alberta , Canada , experienced heavy rainfall that <mark> triggered </mark> catastrophic flooding <mark> described </mark> by the provincial government as the worst in Alberta 's history .\n\nEvents: triggered:Causation;described:Statement"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "1"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The Virgin Fest , known as the Virgin Mobile FreeFest in the United States , is a rock festival held in the United States and Canada , a spin-off from the V Festival held in the UK ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Output: The Virgin Fest , known as the Virgin Mobile FreeFest in the United States , is a rock festival <mark> held </mark> in the United States and Canada , a spin-off from the V Festival <mark> held </mark> in the UK .\n\nEvents: held:Hold;held:Hold"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "2"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "the radical war or also known as the scottish insurrection of 1820 , was a week of strikes and unrest , a culmination of radical demands for reform in the united kingdom of great britain and ireland which had become prominent in the early years of the french revolution , but had then been repressed during the long napoleonic wars ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Output: the radical war or also known as the scottish insurrection of 1820 , was a week of <mark> strikes </mark> and <mark> unrest </mark> , a culmination of radical demands for reform in the united kingdom of great britain and ireland which had <mark> become </mark> prominent in the early years of the french revolution , but had then been <mark> repressed </mark> during the long napoleonic wars .\n\nEvents: strikes:Attack;unrest:Hostile_encounter;become:Becoming;repressed:Hindering"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "3"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The Manili massacre refers to the mass murder of 70-79 Moro Muslims , including women and children , committed in a mosque in Manili , Carmen , North Cotabato , Philippines on June 19 , 1971 ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Output: The Manili <mark> massacre </mark> refers to the mass murder of 70-79 Moro Muslims , including women and children , <mark> committed </mark> in a mosque in Manili , Carmen , North Cotabato , Philippines on June 19 , 1971 .\n\nEvents: massacre:Killing;committed:Commitment"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "4"
+            }
+        }
+    ]
+}

@@ -1,0 +1,187 @@
+{
+    "adapter_spec": {
+        "instructions": "Please follow the above demonstration, extract relations from the [Question text].\nNote the relation need to be in the predefined set of relations.\nThe output format required to is the same as the demonstration, format:(<entity_ID>, relation, <entity_ID>).\nThe predefined set of relations:\n{head of government, country, place of birth, place of death, father, mother, spouse, country of citizenship, continent, instance of, head of state, capital, official language, position held, child, author, member of sports team, director, screenwriter, educated at, composer, member of political party, employer, founded by, league, publisher, owned by, located in the administrative territorial entity, genre, operator, religion, contains administrative territorial entity, follows, followed by, headquarters location, cast member, producer, award received, creator, parent taxon, ethnic group, performer, manufacturer, developer, series, sister city, legislative body, basin country, located in or next to body of water, military branch, record label, production company, location, subclass of, subsidiary, part of, original language of work, platform, mouth of the watercourse, original network, member of, chairperson, country of origin, has part, residence, date of birth, date of death, inception, dissolved, abolished or demolished, publication date, start time, end time, point in time, conflict, characters, lyrics by, located on terrain feature, participant, influenced by, location of formation, parent organization, notable work, separated from, narrative location, work location, applies to jurisdiction, product or material produced, unemployment rate, territory claimed by, participant of, replaces, replaced by, capital of, languages spoken, written or signed, present in work, sibling}\n",
+        "input_prefix": "",
+        "input_suffix": "\n",
+        "reference_prefix": "",
+        "reference_suffix": "\n",
+        "output_prefix": "",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 4,
+        "max_eval_instances": 100,
+        "max_tokens": 256,
+        "stop_sequences": [
+            "\n"
+        ],
+        "decoding_parameters": {},
+        "ouput_format": "string"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:642d1c02a42433139996bc15\nText: Less than four months removed from the entity0 World Cup entity0 \u2019 s bright lights , the U . S . men \u2019 s national soccer team visited an 8 , 000 - seat bayside stadium on a tiny entity1 Caribbean entity1 island Friday to face an opponent with players from regional leagues and some of entity2 England entity2 \u2019 s lowest divisions entity3 . entity3 \n It was not by choice entity3 . entity3 \n But because the entity4 Concacaf Nations League entity4 is an official competition \u2014 the first since their entity5 Qatar entity5 odyssey in November - December \u2014 the No . \n 13 entity6 Americans entity6 were obligated to play entity7 Grenada entity7 , which sits 160 places behind them in the entity8 FIFA entity8 rankings . \n Predictably , the match transpired with a wealth of goals and without any suspense as the entity9 United States entity9 roared to four first - half goals and smashed the entity10 Spice Boys entity10 , 7 - 1 , in St . George \u2019 s , Grenada . \n With a victory or draw Monday against entity11 El Salvador entity11 ( 1 - 0 - 2 ) in entity12 Orlando entity12 , the entity13 Nations League entity13 \u2019 s defending champion ( 2 - 0 - 1 ) will win Group D and advance to the final four June 15 - 18 in Las Vegas . \n The tournament , in its second edition , fills dates on the international match calendar that were once occupied by friendlies . \n By finishing no worse than second in the group , the entity9 United States entity9 clinched a place in the entity14 Concacaf Gold Cup entity14 this summer . \n \u201c A result like this , you don \u2019 t want to get carried away ,\u201d interim coach entity15 Anthony Hudson entity15 said . \n \u201c The importance for us is to make sure we do all the right things between now and the next game and we finish the job off entity3 .\u201d entity3 entity16 Christian Pulisic entity16 had a role in the first five goals , assisting directly or indirectly on four first - half tallies and scoring shortly after intermission entity3 . entity3 \n entity17 Weston McKennie entity17 and entity18 Ricardo Pepi entity18 had two goals apiece and entity19 Brenden Aaronson entity19 and entity20 Alejandro Zendejas entity20 added one each as the entity6 Americans entity6 enjoyed their most lopsided victory since they buried entity21 Trinidad and Tobago entity21 , 7 - 0 , in a January 2021 friendly in Orlando . \n It also set a program record for goals scored in an away match and ended a nine - game winless streak on the road . \n \u201c We love scoring goals ,\u201d entity22 Pulisic entity22 said . \n \u201c A good score line , positive result for the team entity3 . entity3 \n We definitely enjoyed ourselves out there entity3 .\u201d entity3 entity23 Hudson entity23 marveled at not only entity22 Pulisic entity22 \u2019 s production but his hunger and commitment . \n \u201c I just can \u2019 t speak highly enough of the character of this person who is not just a talented player but is someone that I can assure you absolutely loves playing for his country ,\u201d he said . \n \u201c He \u2019 s got great character and is inspiring to the rest of the group . \n You saw that in his performance .\u201d Hudson also said of his captain , \u201c I can \u2019 t remember the amount of times he puts his body on the line . \n For such a big player playing for a big club [ Chelsea ], a huge value on him , and we go to places like this and he has no problem just giving absolutely everything he has .\u201d Hudson had gathered the team in January for two low - key friendlies in greater Los Angeles , though that was without most of the European - based players . \n This camp was a reunion for 12 players from the World Cup squad that advanced to the round of 16 before losing to the Netherlands . \n Seven started Friday . \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity4,part of,entity13)\n(entity6,part of,entity13)\n(entity13,has part,entity4)\n(entity15,participant of,entity0)\n(entity15,country of citizenship,entity9)\n(entity16,country of citizenship,entity9)\n(entity17,country of citizenship,entity9)\n(entity18,country of citizenship,entity9)\n(entity19,country of citizenship,entity9)\n(entity20,country of citizenship,entity9)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 82
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:6433d39537cba76d182ecf07\nText: The door shut with a small click . \n entity0 Raph entity0 sighed , looking around entity1 Leo entity1 \u2019 s room , a small smile stretching on his face at the slightly messy room . \n entity1 Leo entity1 \u2019 s blankets slightly pulled back on his bed , his lights hung around the ceiling blinking dimly giving slight illumination to the room . \n The teddy bear entity0 Raph entity0 had given the second youngest when they were tots to help with his bad dreams sat next to the pillow . \n The snapping turtle walked up to the new leader's bedside table , the family picture that entity2 Donnie entity2 took of the family when entity3 Gram Gram entity3 had stayed over in the lair , lay on the oak surface \u2026 Oh how he still misses entity3 Gram Gram entity3 \u2026 but that was years ago , he \u2019 s moved on , although the pleasant feelings the memories give him won't ever go away . \n He left the photo where it was , not wanting to touch anything in the bedroom , he sat down on the bed looking down at his hands . \n He couldn \u2019 t help but keep smiling . \n The memories of him and his brothers when they were mere kids flooding his mind . \n He remembers every birthday that his brothers have ever had , even his own . \n The arguments entity2 Donnie entity2 and entity1 Leo entity1 had over the smallest things like who got top bunk for the week . \n Who got to get the JJ comics and who got the figures . \n entity1 Leo entity1 \u2019 s comics . \n They stood nicely inside their shelves , some of entity2 Donnie entity2 \u2019 s own issues mixed in with the middle childs . \n He remembers the first issue entity4 pops entity4 had ever given him . \n entity0 Raph entity0 had been there with entity5 splinter entity5 to pick out gifts for the family \u2019 s first ever entity6 Christmas entity6 ; the huge smile on entity1 Leo entity1 \u2019 s face as he opened the comic , staring wide eyed at the amazing art that was contained within its pages . \n His hands suddenly felt wet . \n He looked down , confused and not processing what was happening . \n He was crying ; tears not sad nor happy .. What was the right word ? \n Anger ? \n Shame ? Regret ? \n No it was neither of those . \n He sighed , in times like this he wishes he were more in tune with understanding what his emotions were like his youngest orange brother . \n But he was the oldest , he never had time to dwell on his emotions , having to look after and try and understand where his younger brother's minds were , he often forgot to check in with his own self . \n See how he was doing . \n \u201c You good there entity7 Big Red entity7 ?\u201d A voice laughed . \n It was entity1 Leo entity1 . \n entity0 Raph entity0 looked up and smiled . \n Quickly wiping his tears away he couldn \u2019 t help but chuckle \u201c How did I not hear the door open ? \n Ninja Mode ?\u201d He asked . \n Leo shrugged . \n \u201c Hey , you know me , ninja all day everyday \u201d the blue leader laughed , leaning up against the wall , his smile turned upside down slightly as he sighed . \n Pushing himself off the wall he made his way over to the bed taking a seat next to Raph . \n He looked at him , unspoken worry written all over his face . \n \u201c Raph \u2026 talk to me \u201d he smiled gently \u201c we leaders gotta look out for each other remember ?\u201d He nodded . \n The snapping turtle sighed \u201c W - well , I was going to come in here to ask if you could check in on Mikey and Don . \n Then I saw everything in your room I saw \u2026\u201d he hesitated \u201c I saw the picture , and all these happy memories came flooding back and I dunno I got overwhelmed with this feeling of \u2026\u201d \u201c Contentment ?\u201d Leo finished for him . \n Raph nodded . \n \u201c Yeah \u2026 that's the word \u201d He smiled . \n Another memory soon made its way into his mind . \n \u201c Hey \u2026 remember the Lair Games ?\u201d he chuckled . \n \u201c What and my undefeated record \u2026 until Don finally beat me ?\u201d He recalled , still salty about losing \u201c though I suppose it wasn't a full loss , I actually got slee \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity0,sibling,entity2)\n(entity2,sibling,entity0)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 114
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:642d1c01a42433139996bbaa\nText: A proposed overhaul of the system that governs how human organs are procured , transported and transplanted in the entity0 United States entity0 could save many lives \u2014 if the entity1 Biden entity1 administration succeeds in breaking up the monopoly of the network that currently runs it . \n Some 106 , 000 entity2 Americans entity2 are on an organ waiting list , and 22 die each day in want of organs such as kidneys , livers and hearts , according to the National Academies of Sciences , Engineering and Medicine . \n Many of these deaths are preventable . \n A 2018 entity3 Post entity3 analysis found that tens of thousands of potentially usable organs go uncollected every year . \n If this resource were better managed , the organ waitlist could be substantially cut or eliminated . \n More people would live . \n A big part of the problem is that monopolies run the organ procurement system . \n Across the country , 56 \u201c organ procurement organizations \u201d have exclusive control over collecting organs in their respective regions . \n On the national level , the entity4 United Network for Organ Sharing entity4 ( entity5 UNOS entity5 ), a quasi - governmental agency , is supposed to oversee these regional organ procurers and run the logistical operation that matches organs with doctors , hospitals , labs and , ultimately , patients . \n Yet entity5 UNOS entity5 , too , is effectively a monopoly , having held the contract for running the system since it was created nearly 40 years ago . \n With no competition , performance suffers . \n Independent reviews have found big problems , particularly in the technology entity5 UNOS entity5 uses to get organs from organ procurement organizations to the right patients at the right transplant centers , which critics complain still relies excessively on manual data entry . \n The system is prone to crashing , as it did for 40 minutes in February . \n This sort of failure could render unhealthy a freshly procured organ if it meant a delay in transporting it . \n Nationally , more than one - fifth of recovered kidneys are not transplanted into needy people , a rate far worse than in peer entity6 European entity6 countries . \n There have been preventable \u2014 and deadly \u2014 snafus . \n A entity7 Senate Finance Committee entity7 investigation attributed 70 deaths and 249 illnesses to mistakes in organ screening before transplantation . \n A well - meaning reform meant to get organs transplanted into the sickest patients first appears to have led to a rise in the number of wasted livers , according to a new entity3 Post entity3 analysis . \n entity5 UNOS entity5 \u2019 s contract with the federal government is up for renewal this year , and entity1 Biden entity1 administration officials proposed Wednesday some major reforms . \n One reason entity5 UNOS entity5 has typically encountered little competition for the contract to run the organ transplant system is that there are few entities that can operate a logistics network and perform all of entity5 UNOS entity5 \u2019 s other tasks . \n So , federal officials want to break UNOS \u2019 s functions into separate contracts , attracting companies to bid for the opportunity to operate specific parts of the system . \n This could be particularly helpful if it induced companies that specialize in complex logistics to seek the contract to improve the organ transplant system \u2019 s IT operations ; if organ logistics were operated as efficiently as FedEx package delivery , fewer may be lost . \n Biden administration officials say they have the legal authority they need to proceed . \n But Congress should provide any funds that might be required , particularly to make the new contracts more attractive to outside companies . \n Lawmakers should also review the statutes governing the organ transplant system , ensuring that the administrations have all necessary powers . \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity0,head of government,entity1)\n(entity1,country,entity0)\n(entity1,country of citizenship,entity0)\n(entity1,applies to jurisdiction,entity0)\n(entity4,country,entity0)\n(entity5,country,entity0)\n(entity7,country,entity0)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 73
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:6433d05b37cba76d182ecee7\nText: It was still . \n Only the whispers of slipping dunes and the rustling of burrowing creatures broke the silence . \n He wasn \u2019 t sure what he \u2019 d expected . \n Maybe a sign of the lives that had ended here . \n The ghost of his mother . \n Echoes of screams . \n Artifacts in the sand . \n Pieces of broken spears . \n Rotting fabric . \n Shards of crude mud bowls . \n Something . \n Anything . \n There was nothing . \n The desert had reclaimed peace and erased the signs of agony . \n He lifted his face toward the sky . \n The stars closest to the horizon were just beginning to dim , signaling the approaching dawn . \n entity0 Rex entity0 hovered near the shuttle , alert , looking every bit a trooper despite the civilian clothing . \n Soon life would stir and wake . \n It surprised him now , as an adult , the things he hadn \u2019 t noticed as a child . \n The desert wasn \u2019 t as empty as it had seemed when he was young and background noises had been normal and unheard . \n But he remembered that when the suns rose , hardy plants would poke up the tips of their heads , hungry for the nourishing light , retreating when the midday suns beat on them . \n Creatures , both benign and aggressive , would creep and crawl , seeking warmth or shade wherever they could find it . \n He hoped his baby son already knew to be careful , to shake out his shoes , to never put his hand into a dark cubby in the homestead , to check the potted plants before pulling off leaves and showing them to his \u2026 to entity1 Beru entity1 . \n entity2 Anakin entity2 took a big gulp of air and swallowed it . \n He wanted his child . \n He wanted that to be all that was in his brain . \n He wanted the reality of entity3 Luke entity3 to wipe out everything else that had happened here . \n But his mind fought him , replaying scenes of his mother over and over . \n Saying good - bye when he left her as a child . \n Saying good - bye when he found her as an adult . \n All those in - between years that were blank , that he had tried to put aside until the nightmares had begun , all those lost years , still empty no matter the lengthy anecdotes entity4 Cliegg Lars entity4 had recited when he couldn \u2019 t listen . \n He wished he could remember clearly , but he supposed he \u2019 d been in shock . \n entity5 Padm\u00e9 entity5 would remember . \n Would entity3 Luke entity3 want to leave the only parents he \u2019 d ever known ? \n Could he take his son if he was crying and screaming and begging not to go ? \n Or if he was excited to leave without looking back ? \n Would a day come when he regretted the life and the people he \u2019 d left behind ? \n Would Luke be able to love him and Padm\u00e9 ? \n Would that be enough to replace Beru and Owen in his heart ? \n Should it be enough ? \n He swiped one hand over his face and turned back to the ship . \n Light was slicing over the top of the dunes like a blade . \n It was time . \n \u201c We could still \u2014\u201d Owen stopped . \n \u201c No , we couldn \u2019 t . \n It \u2019 s too late .\u201d Beru tried to smile . \n She slid her arm around his waist . \n \u201c And we wouldn \u2019 t . \n They should have each other . \n It \u2019 s right .\u201d \u201c I know .\u201d \u201c I know you do .\u201d \u201c I know you know I do .\u201d Owen \u2019 s answering smile was as shaky as hers . \n He leaned his cheek on the top of her head . \n \u201c It \u2019 s nearly dawn . \n I wonder when they \u2019 ll get here .\u201d \u201c As soon as they \u2019 re able , I suppose . \n They must be anxious to see him .\u201d \u201c Well , they \u2019 ll have to wait . \n Luke \u2019 s still sleeping .\u201d \u201c You know he refuses to get up before the suns do .\u201d This time her smile was real . \n But it faded quickly . \n Would this be the last morning she roused her boy ? \n The last time she helped him dress ? \n Anakin and Padm\u00e9 had never dressed a child , would they know he wanted to do everything himself ? \n But that he needed help , that he never got all the buttons quite right so most of his little clothes were tunics instead of shirts ? \n That sometimes socks went on backwards and had to be twisted around ? \n That leg wraps went over pants and shoes to protect him from stings and bites ? \n Would they know \u2014 \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity0,mother,entity5)\n(entity2,child,entity3)\n(entity3,mother,entity5)\n(entity5,child,entity3)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 51
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Title:642d1c02a42433139996bbfe\nText: entity0 Lindsay Brandon entity0 is a lawyer whose past clients include athletes disputing doping suspensions . \n In her new post as the entity1 WTA entity1 \u2019 s first director of safeguarding , entity2 Brandon entity2 is leading an increased effort to protect athletes from predatory coaches \u2014 and others \u2014 on the women \u2019 s professional tennis tour . \n \u201c Safeguarding is about emotional abuse . \n Physical abuse , as well . \n And it \u2019 s not just coach - athlete ,\u201d entity2 Brandon entity2 said in a telephone interview from the entity3 BNP Paribas Open entity3 , which wrapped up Sunday in entity4 Indian Wells entity4 , entity5 California entity5 , and was the first tournament she visited as part of the job she began 3 1 / 2 months ago . \n \u201c There are other people that are part of this process ,\u201d entity2 Brandon entity2 told entity6 The Associated Press entity6 . \n \u201c There can be athlete - to - athlete issues . \n There can be issue with respect to training staff separate from coaches . \n Those are just some of the examples .\u201d Her priorities include managing the entity1 WTA entity1 security team \u2019 s investigations of complaints \u2014 she did not reveal how many are currently active \u2014 and \u201c monitoring any potential concerns ,\u201d along with improving education and creating a safeguarding code of conduct she hopes will be published in 2024 . \n The aim of that code , which entity2 Brandon entity2 said is separate from a general code of conduct that already exists , is to create a rulebook that outlines behavioral standards and establishes procedures to follow if a matter arises . \n It will apply to anyone who is credentialed \u201c in the entity1 WTA entity1 environment ,\u201d entity2 Brandon entity2 said , including players , coaches , physiotherapists , other members of entourages , tournament staff and tour staff . \n \u201c Safeguarding is multifaceted and strongest when the entire population is educated , invested and held to the same standards . \n ... We have a diverse body of players , staff and support teams , so the challenges and areas of concern will vary . \n As the governing body , our focus is making sure that players feel they can come forward and share their concerns , which plays a critical role in being able to address the issues that may be at hand ,\u201d entity1 WTA entity1 Chairman and CEO entity7 Steve Simon entity7 said in an email to entity6 The Associated Press entity6 . \n Might be hard to gauge the success of such an initiative so soon , but entity8 Simon entity8 found at least one positive measure . \n \u201c We are seeing more athletes coming forward ,\u201d he said , \u201c which is a great initial result .\u201d Adding what entity8 Simon entity8 called \u201c the expertise of a dedicated safeguarding position \u201d is the biggest public - facing step taken by the Florida - based WTA in this area since the issue of protecting players drew increased attention last year : A French player once ranked as high as No . \n 39 accused her former coach of rape ; another player sued the U . S . Tennis Association for failing to protect her from a coach she says sexually abused her at one of its training centers when she was 19 ; 2002 International Tennis Hall of Fame inductee Pam Shriver , who won 21 Grand Slam titles in women \u2019 s doubles , said she \u201c had an inappropriate and damaging relationship with my much older coach \u201d that began when she was 17 and he was 50 . \n \u201c Maybe we need to talk more to players and tell them what \u2019 s going on with everything so they know to be careful ,\u201d said two - time Grand Slam finalist Ons Jabeur , a 28 - year - old from Tunisia . \n \u201c Maybe it \u2019 s never enough and we should do more .\u201d \n\nRelations in the predefined set of relations in the above text:?\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "(entity1,founded by,entity7)\n(entity3,located in the administrative territorial entity,entity5)\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": 103
+            },
+            "request": {
+                "result": {
+                    "completions": [
+                        {
+                            "text": "",
+                            "logprob": 0,
+                            "tokens": []
+                        }
+                    ],
+                    "cached": true,
+                    "request_time": 1.622053623199463,
+                    "request_datetime": 1669584580
+                }
+            }
+        }
+    ]
+}

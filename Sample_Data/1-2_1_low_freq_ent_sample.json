@@ -1,0 +1,122 @@
+{
+    "adapter_spec": {
+        "instructions": "Please give answers to the following questions about knowledge. Note: If there are more than one answer, print them all and separate them with a semicolon (;). Please do not give anything other than the answers.",
+        "input_prefix": "Question: ",
+        "input_suffix": "\n",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "Answer: ",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 64,
+        "stop_sequences": [],
+        "decoding_parameters": {
+            "temperature": 1
+        },
+        "ouput_format": "list"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "What is writing language of Lectionary 338?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Ancient Greek"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "1_low_freq_ent5418"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "What is the nationality of Martin Ravallion?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Australia"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "1_low_freq_ent2042"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "What is the manufacturer of Velasco-class cruiser?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Thames Ironworks and Shipbuilding Company"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "1_low_freq_ent5328"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "What color is Candida, Woman of the Year?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "black and white"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "1_low_freq_ent3312"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "What is the taxon rank of Vachonisia?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "genus"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "1_low_freq_ent9169"
+            },
+            "request": {}
+        }
+    ]
+}

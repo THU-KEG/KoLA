@@ -1,0 +1,363 @@
+{
+    "adapter_spec": {
+        "instructions": "Please answer the following question.",
+        "input_prefix": "Q: ",
+        "input_suffix": "\n",
+        "output_prefix": "A: ",
+        "output_suffix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 100,
+        "max_tokens": 128,
+        "stop_sequences": [
+            "\n"
+        ]
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: How many children does LeBron James have?\nA: LeBron James have kids LeBrony James Jr., Bryce Maximus James, Zhuri James. So LeBron James have 3 kids. So the answer is: 3.\nQ: Does LeBron James and Yao Ming come from the same country?\nA: LeBron James is from the U.S.. Yao Ming is from China. So the answer is: no.\nQ: Which area is larger, Helsinki or Bendigo?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Bendigo"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "program": [
+                    {
+                        "function": "Find",
+                        "dependencies": [],
+                        "inputs": [
+                            "Helsinki"
+                        ]
+                    },
+                    {
+                        "function": "Find",
+                        "dependencies": [],
+                        "inputs": [
+                            "Bendigo"
+                        ]
+                    },
+                    {
+                        "function": "SelectBetween",
+                        "dependencies": [
+                            0,
+                            1
+                        ],
+                        "inputs": [
+                            "area",
+                            "greater"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": ""
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: How many children does LeBron James have?\nA: LeBron James have kids LeBrony James Jr., Bryce Maximus James, Zhuri James. So LeBron James have 3 kids. So the answer is: 3.\nQ: Does LeBron James and Yao Ming come from the same country?\nA: LeBron James is from the U.S.. Yao Ming is from China. So the answer is: no.\nQ: How many census-designated places have a population that is over 5700 or are the residence of Herbert Hoover?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "1472"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "program": [
+                    {
+                        "function": "FindAll",
+                        "dependencies": [],
+                        "inputs": []
+                    },
+                    {
+                        "function": "FilterNum",
+                        "dependencies": [
+                            0
+                        ],
+                        "inputs": [
+                            "population",
+                            "5700",
+                            ">"
+                        ]
+                    },
+                    {
+                        "function": "FilterConcept",
+                        "dependencies": [
+                            1
+                        ],
+                        "inputs": [
+                            "census-designated place"
+                        ]
+                    },
+                    {
+                        "function": "Find",
+                        "dependencies": [],
+                        "inputs": [
+                            "Herbert Hoover"
+                        ]
+                    },
+                    {
+                        "function": "Relate",
+                        "dependencies": [
+                            3
+                        ],
+                        "inputs": [
+                            "residence",
+                            "forward"
+                        ]
+                    },
+                    {
+                        "function": "FilterConcept",
+                        "dependencies": [
+                            4
+                        ],
+                        "inputs": [
+                            "census-designated place"
+                        ]
+                    },
+                    {
+                        "function": "Or",
+                        "dependencies": [
+                            2,
+                            5
+                        ],
+                        "inputs": []
+                    },
+                    {
+                        "function": "Count",
+                        "dependencies": [
+                            6
+                        ],
+                        "inputs": []
+                    }
+                ],
+                "split": "test",
+                "id": ""
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: How many children does LeBron James have?\nA: LeBron James have kids LeBrony James Jr., Bryce Maximus James, Zhuri James. So LeBron James have 3 kids. So the answer is: 3.\nQ: Does LeBron James and Yao Ming come from the same country?\nA: LeBron James is from the U.S.. Yao Ming is from China. So the answer is: no.\nQ: What county of Arizona borders San Juan County with the population of 14,746 and uses English-language http://www.navajocountyaz.gov as the official website ?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Navajo County"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "program": [
+                    {
+                        "function": "Find",
+                        "dependencies": [],
+                        "inputs": [
+                            "San Juan County"
+                        ]
+                    },
+                    {
+                        "function": "FilterNum",
+                        "dependencies": [
+                            0
+                        ],
+                        "inputs": [
+                            "population",
+                            "14746",
+                            "="
+                        ]
+                    },
+                    {
+                        "function": "Relate",
+                        "dependencies": [
+                            1
+                        ],
+                        "inputs": [
+                            "shares border with",
+                            "forward"
+                        ]
+                    },
+                    {
+                        "function": "FilterConcept",
+                        "dependencies": [
+                            2
+                        ],
+                        "inputs": [
+                            "county of Arizona"
+                        ]
+                    },
+                    {
+                        "function": "FindAll",
+                        "dependencies": [],
+                        "inputs": []
+                    },
+                    {
+                        "function": "FilterStr",
+                        "dependencies": [
+                            4
+                        ],
+                        "inputs": [
+                            "official website",
+                            "http://www.navajocountyaz.gov"
+                        ]
+                    },
+                    {
+                        "function": "QFilterStr",
+                        "dependencies": [
+                            5
+                        ],
+                        "inputs": [
+                            "language of work or name",
+                            "English"
+                        ]
+                    },
+                    {
+                        "function": "FilterConcept",
+                        "dependencies": [
+                            6
+                        ],
+                        "inputs": [
+                            "county of Arizona"
+                        ]
+                    },
+                    {
+                        "function": "And",
+                        "dependencies": [
+                            3,
+                            7
+                        ],
+                        "inputs": []
+                    },
+                    {
+                        "function": "What",
+                        "dependencies": [
+                            8
+                        ],
+                        "inputs": []
+                    }
+                ],
+                "split": "test",
+                "id": ""
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: How many children does LeBron James have?\nA: LeBron James have kids LeBrony James Jr., Bryce Maximus James, Zhuri James. So LeBron James have 3 kids. So the answer is: 3.\nQ: Does LeBron James and Yao Ming come from the same country?\nA: LeBron James is from the U.S.. Yao Ming is from China. So the answer is: no.\nQ: What is the official website of the higher education institution whose ISNI is 0000 0000 8544 9536?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "http://www.belmont.edu"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "program": [
+                    {
+                        "function": "FindAll",
+                        "dependencies": [],
+                        "inputs": []
+                    },
+                    {
+                        "function": "FilterStr",
+                        "dependencies": [
+                            0
+                        ],
+                        "inputs": [
+                            "ISNI",
+                            "0000 0000 8544 9536"
+                        ]
+                    },
+                    {
+                        "function": "FilterConcept",
+                        "dependencies": [
+                            1
+                        ],
+                        "inputs": [
+                            "higher education institution"
+                        ]
+                    },
+                    {
+                        "function": "QueryAttr",
+                        "dependencies": [
+                            2
+                        ],
+                        "inputs": [
+                            "official website"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": ""
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: How many children does LeBron James have?\nA: LeBron James have kids LeBrony James Jr., Bryce Maximus James, Zhuri James. So LeBron James have 3 kids. So the answer is: 3.\nQ: Does LeBron James and Yao Ming come from the same country?\nA: LeBron James is from the U.S.. Yao Ming is from China. So the answer is: no.\nQ: Which person's Instagram username is ekmainaurektu7?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Ekta Kapoor"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "program": [
+                    {
+                        "function": "FindAll",
+                        "dependencies": [],
+                        "inputs": []
+                    },
+                    {
+                        "function": "FilterStr",
+                        "dependencies": [
+                            0
+                        ],
+                        "inputs": [
+                            "Instagram username",
+                            "ekmainaurektu7"
+                        ]
+                    },
+                    {
+                        "function": "FilterConcept",
+                        "dependencies": [
+                            1
+                        ],
+                        "inputs": [
+                            "human"
+                        ]
+                    },
+                    {
+                        "function": "What",
+                        "dependencies": [
+                            2
+                        ],
+                        "inputs": []
+                    }
+                ],
+                "split": "test",
+                "id": ""
+            }
+        }
+    ]
+}

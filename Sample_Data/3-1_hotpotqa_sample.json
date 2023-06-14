@@ -1,0 +1,112 @@
+{
+    "adapter_spec": {
+        "instructions": "Please answer the following question.",
+        "input_prefix": "Q: ",
+        "input_suffix": "\n",
+        "output_prefix": "A: ",
+        "output_suffix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 100,
+        "max_tokens": 128,
+        "stop_sequences": [
+            "\n"
+        ]
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: Jeremy Theobald and Christopher Nolan share what profession?\nA: Jeremy Theobald is an actor and producer. Christopher Nolan is a director, producer, and screenwriter. Therefore, they both share the profession of being a producer. So the answer is: producer.\nQ: What film directed by Brian Patrick Butler was inspired by a film directed by F.W. Murnau?\nA: Brian Patrick Butler directed the film The Phantom Hour. The Phantom Hour was inspired by the films such as Nosferatu and The Cabinet of Dr. Caligari. Of these Nosferatu was directed by F.W. Murnau. So the answer is: The Phantom Hour.\nQ: How many episodes were in the South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra?\nA: The South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra is Reply 1988. The number of episodes Reply 1988 has is 20. So the answer is: 20.\nQ: Vertical Limit stars which actor who also played astronaut Alan Shepard in \"The Right Stuff\"?\nA: The actor who played astronaut Alan Shepard in \"The Right Stuff\" is Scott Glenn. The movie Vertical Limit also starred Scott Glenn. So the answer is: Scott Glenn.\nQ: What was the 2014 population of the city where Lake Wales Medical Center is located?\nA: Lake Wales Medical Center is located in the city of Polk County, Florida. The population of Polk County in 2014 was 15,140. So the answer is: 15,140.\nQ: Which two Swiss attractions were the cause of the \"grand hotels\" in which Jakob Ragaz worked on? \nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "skiing and mountaineering"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "dev",
+                "id": "5ae7bdc05542993210983f29"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: Jeremy Theobald and Christopher Nolan share what profession?\nA: Jeremy Theobald is an actor and producer. Christopher Nolan is a director, producer, and screenwriter. Therefore, they both share the profession of being a producer. So the answer is: producer.\nQ: What film directed by Brian Patrick Butler was inspired by a film directed by F.W. Murnau?\nA: Brian Patrick Butler directed the film The Phantom Hour. The Phantom Hour was inspired by the films such as Nosferatu and The Cabinet of Dr. Caligari. Of these Nosferatu was directed by F.W. Murnau. So the answer is: The Phantom Hour.\nQ: How many episodes were in the South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra?\nA: The South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra is Reply 1988. The number of episodes Reply 1988 has is 20. So the answer is: 20.\nQ: Vertical Limit stars which actor who also played astronaut Alan Shepard in \"The Right Stuff\"?\nA: The actor who played astronaut Alan Shepard in \"The Right Stuff\" is Scott Glenn. The movie Vertical Limit also starred Scott Glenn. So the answer is: Scott Glenn.\nQ: What was the 2014 population of the city where Lake Wales Medical Center is located?\nA: Lake Wales Medical Center is located in the city of Polk County, Florida. The population of Polk County in 2014 was 15,140. So the answer is: 15,140.\nQ: Which two teams did the the head coach of The 2007 San Diego State Aztecs play for professionally?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Detroit Lions and the Los Angeles Rams"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "dev",
+                "id": "5a7fb17c5542994857a767bb"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: Jeremy Theobald and Christopher Nolan share what profession?\nA: Jeremy Theobald is an actor and producer. Christopher Nolan is a director, producer, and screenwriter. Therefore, they both share the profession of being a producer. So the answer is: producer.\nQ: What film directed by Brian Patrick Butler was inspired by a film directed by F.W. Murnau?\nA: Brian Patrick Butler directed the film The Phantom Hour. The Phantom Hour was inspired by the films such as Nosferatu and The Cabinet of Dr. Caligari. Of these Nosferatu was directed by F.W. Murnau. So the answer is: The Phantom Hour.\nQ: How many episodes were in the South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra?\nA: The South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra is Reply 1988. The number of episodes Reply 1988 has is 20. So the answer is: 20.\nQ: Vertical Limit stars which actor who also played astronaut Alan Shepard in \"The Right Stuff\"?\nA: The actor who played astronaut Alan Shepard in \"The Right Stuff\" is Scott Glenn. The movie Vertical Limit also starred Scott Glenn. So the answer is: Scott Glenn.\nQ: What was the 2014 population of the city where Lake Wales Medical Center is located?\nA: Lake Wales Medical Center is located in the city of Polk County, Florida. The population of Polk County in 2014 was 15,140. So the answer is: 15,140.\nQ: Which band has the guitarist Gorden Mack, Red House Painters or Daughtry?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Red House Painters"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "dev",
+                "id": "5ab871725542990e739ec8f8"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: Jeremy Theobald and Christopher Nolan share what profession?\nA: Jeremy Theobald is an actor and producer. Christopher Nolan is a director, producer, and screenwriter. Therefore, they both share the profession of being a producer. So the answer is: producer.\nQ: What film directed by Brian Patrick Butler was inspired by a film directed by F.W. Murnau?\nA: Brian Patrick Butler directed the film The Phantom Hour. The Phantom Hour was inspired by the films such as Nosferatu and The Cabinet of Dr. Caligari. Of these Nosferatu was directed by F.W. Murnau. So the answer is: The Phantom Hour.\nQ: How many episodes were in the South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra?\nA: The South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra is Reply 1988. The number of episodes Reply 1988 has is 20. So the answer is: 20.\nQ: Vertical Limit stars which actor who also played astronaut Alan Shepard in \"The Right Stuff\"?\nA: The actor who played astronaut Alan Shepard in \"The Right Stuff\" is Scott Glenn. The movie Vertical Limit also starred Scott Glenn. So the answer is: Scott Glenn.\nQ: What was the 2014 population of the city where Lake Wales Medical Center is located?\nA: Lake Wales Medical Center is located in the city of Polk County, Florida. The population of Polk County in 2014 was 15,140. So the answer is: 15,140.\nQ: The View from the Bottom is the fifth studio album by an American rock band best known for what hit song?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "My Own Worst Enemy"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "dev",
+                "id": "5ab8829d55429934fafe6e08"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: Jeremy Theobald and Christopher Nolan share what profession?\nA: Jeremy Theobald is an actor and producer. Christopher Nolan is a director, producer, and screenwriter. Therefore, they both share the profession of being a producer. So the answer is: producer.\nQ: What film directed by Brian Patrick Butler was inspired by a film directed by F.W. Murnau?\nA: Brian Patrick Butler directed the film The Phantom Hour. The Phantom Hour was inspired by the films such as Nosferatu and The Cabinet of Dr. Caligari. Of these Nosferatu was directed by F.W. Murnau. So the answer is: The Phantom Hour.\nQ: How many episodes were in the South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra?\nA: The South Korean television series in which Ryu Hye\u2212young played Bo\u2212ra is Reply 1988. The number of episodes Reply 1988 has is 20. So the answer is: 20.\nQ: Vertical Limit stars which actor who also played astronaut Alan Shepard in \"The Right Stuff\"?\nA: The actor who played astronaut Alan Shepard in \"The Right Stuff\" is Scott Glenn. The movie Vertical Limit also starred Scott Glenn. So the answer is: Scott Glenn.\nQ: What was the 2014 population of the city where Lake Wales Medical Center is located?\nA: Lake Wales Medical Center is located in the city of Polk County, Florida. The population of Polk County in 2014 was 15,140. So the answer is: 15,140.\nQ: Which documentary is the oldest, The Private Life of Plants or Marx Reloaded?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The Private Life of Plants"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "dev",
+                "id": "5a77a7695542997042120ac4"
+            }
+        }
+    ]
+}

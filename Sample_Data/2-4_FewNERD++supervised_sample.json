@@ -1,0 +1,118 @@
+{
+    "adapter_spec": {
+        "instructions": "Please find all entities in the provided texts and classify them into different types.",
+        "input_prefix": "",
+        "input_suffix": "",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "",
+        "output_suffix": "",
+        "instance_prefix": "",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 128,
+        "stop_sequences": []
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "The hotel features a $ 6 million 33-foot aerial skyway connecting to the Austin Convention Center , designed by Thomas Phifer ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The hotel features a [ $ | other-currency ] 6 million 33-foot aerial skyway connecting to the [ Austin Convention Center | building-theater ] , designed by [ Thomas Phifer | person-other ] ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The engines developed a total of and gave a maximum speed of ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The engines developed a total of and gave a maximum speed of ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "The games were played at various venues in France with the Final played at the Parc des Princes in Paris ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The games were played at various venues in [ France | location-GPE ] with the Final played at the [ Parc des Princes | building-sportsfacility ] in [ Paris | location-GPE ] ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "During that time he studied art and graphics at the \u00c9cole des Beaux-Arts in Geneva , and subsequently at the \u00c9cole nationale sup\u00e9rieure des Beaux-Arts in Paris ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "During that time he studied art and graphics at the [ \u00c9cole des Beaux-Arts | organization-education ] in [ Geneva | location-GPE ] , and subsequently at the [ \u00c9cole nationale sup\u00e9rieure des Beaux-Arts | organization-education ] in [ Paris | location-GPE ] ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "His aunt , however , was impeached not long after shes served ."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "His aunt , however , was impeached not long after shes served ."
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        }
+    ]
+}

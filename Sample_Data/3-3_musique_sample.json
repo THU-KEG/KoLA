@@ -1,0 +1,120 @@
+{
+    "adapter_spec": {
+        "instructions": "Please answer the following question.",
+        "input_prefix": "Q: ",
+        "input_suffix": "\n",
+        "output_prefix": "A: ",
+        "output_suffix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 100,
+        "max_tokens": 128,
+        "stop_sequences": [
+            "\n"
+        ]
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When did the first large winter carnival take place in the city where CIMI\u2212FM is licensed to broadcast?\nA: CIMI\u2212FM is licensed to broadcast in Quebec City. The first large winter carnival in Quebec City took place in 1894. So the answer is: 1894.\nQ: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What county is Hebron located in, in the same province the Heritage Places Protection Act applies to?\nA: Heritage Places Protection Act applies to the jurisdiction of Prince Edward Island. Hebron, Prince Edward Island is located in the Prince County. So the answer is: Prince County.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: Who was ultimately responsible for the naval ships that were sent to where the body of water by the city Nicolas Stemann was born in meets the Atlantic?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Caesar"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "4hop1__144024_131905_55331_34700"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When did the first large winter carnival take place in the city where CIMI\u2212FM is licensed to broadcast?\nA: CIMI\u2212FM is licensed to broadcast in Quebec City. The first large winter carnival in Quebec City took place in 1894. So the answer is: 1894.\nQ: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What county is Hebron located in, in the same province the Heritage Places Protection Act applies to?\nA: Heritage Places Protection Act applies to the jurisdiction of Prince Edward Island. Hebron, Prince Edward Island is located in the Prince County. So the answer is: Prince County.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: When did the employer of the Time Machine composer leave Detroit?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "1837"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "3hop1__796162_840093_26196"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When did the first large winter carnival take place in the city where CIMI\u2212FM is licensed to broadcast?\nA: CIMI\u2212FM is licensed to broadcast in Quebec City. The first large winter carnival in Quebec City took place in 1894. So the answer is: 1894.\nQ: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What county is Hebron located in, in the same province the Heritage Places Protection Act applies to?\nA: Heritage Places Protection Act applies to the jurisdiction of Prince Edward Island. Hebron, Prince Edward Island is located in the Prince County. So the answer is: Prince County.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: What year did Lee relocate to the city where the Genesis carmaker is headquartered?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "1947"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "3hop1__62775_198385_161032"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When did the first large winter carnival take place in the city where CIMI\u2212FM is licensed to broadcast?\nA: CIMI\u2212FM is licensed to broadcast in Quebec City. The first large winter carnival in Quebec City took place in 1894. So the answer is: 1894.\nQ: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What county is Hebron located in, in the same province the Heritage Places Protection Act applies to?\nA: Heritage Places Protection Act applies to the jurisdiction of Prince Edward Island. Hebron, Prince Edward Island is located in the Prince County. So the answer is: Prince County.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: Who founded the cable network that owns the broadcaster of Speeders Fight Back?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Ted Turner"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "3hop1__686704_272818_298609"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Q: When did the first large winter carnival take place in the city where CIMI\u2212FM is licensed to broadcast?\nA: CIMI\u2212FM is licensed to broadcast in Quebec City. The first large winter carnival in Quebec City took place in 1894. So the answer is: 1894.\nQ: When was Neville A. Stanton's employer founded?\nA: The employer of Neville A. Stanton is University of Southampton. The University of Southampton was founded in 1862. So the answer is: 1862.\nQ: What county is Hebron located in, in the same province the Heritage Places Protection Act applies to?\nA: Heritage Places Protection Act applies to the jurisdiction of Prince Edward Island. Hebron, Prince Edward Island is located in the Prince County. So the answer is: Prince County.\nQ: What weekly publication in the Connecticut city with the most Zagat rated restaurants is issued by university of America\u2212Lite: How Imperial Academia Dismantled Our Culture's author?\nA: The author of America\u2212Lite: How Imperial Academia Dismantled Our Culture is David Gelernter. David Gelernter was educated at the Yale University. The city in Connecticut that has the highest number of Zagat\u2212rated restaurants is New Haven. The weekly publication in New Haven that is issued by Yale University is Yale Herald. So the answer is: Yale Herald.\nQ: What is the headquarters for the organization who sets the standards for ISO 21500?\nA: The standards for ISO 21500 were set by International Organization for Standardization. The International Organization for Standardization has headquarters in Geneva. So the answer is: Geneva.\nQ: Where do Feynman's lectures he made as an undergraduate pull information from?\nA: "
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "compiled from lectures to Caltech undergraduates in 1961\u201364"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    },
+                    {
+                        "output": {
+                            "text": "Caltech"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "test",
+                "id": "2hop__31567_31623"
+            }
+        }
+    ]
+}

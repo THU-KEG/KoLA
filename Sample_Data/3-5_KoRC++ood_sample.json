@@ -1,0 +1,135 @@
+{
+    "adapter_spec": {
+        "instructions": "You are given one document and one anonymized real-world entity with one or more mentions in the passage. Then we will ask your a question about this anonymized entity. The questions cannot be answered solely within the document or the background knowledge. Your task is to leverage world knowledge you have like Wikipedia or wikidata as background knowledge combined with the given document to answer the question related to the anonymized entity. You must output all answers in the end.",
+        "input_prefix": "\n\nDocument: ",
+        "input_suffix": "\n",
+        "reference_prefix": null,
+        "reference_suffix": null,
+        "output_prefix": "\n\nAnswer: ",
+        "output_suffix": "\n",
+        "instance_prefix": "\n",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 50,
+        "stop_sequences": [
+            "<stop>"
+        ]
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "A private company limited by shares is a class of private limited company incorporated under the laws of [nation within the UK] and Wales , Scotland , certain Commonwealth countries , and the Republic of Ireland .It has shareholders with limited liability and its shares may not be offered to the general public , unlike those of a public limited company ( plc ) .\" Limited by shares \" means that the liability of the shareholders to creditors of the company is limited to the capital originally invested , i.e.the nominal value of the shares and any premium paid in return for the issue of the shares by the company .A shareholder 's personal assets are thus protected in the event of the company 's insolvency , but any money invested in the company may be lost .A limited company may be \" private \" or \" public \" .A private limited company 's disclosure requirements are lighter , but its shares may not be offered to the general public and therefore can not be traded on a public stock exchange .This is the major difference between a private limited company and a public limited company .Most companies , particularly small companies , are private .Private companies limited by shares are usually required to have the suffix \" Limited \" ( often written \" Ltd \" or \" Ltd. \" ) or \" Incorporated \" ( \" Inc. \" ) as part of their name , though the latter can not be used in the UK or the Republic of Ireland .\" Cyfyngedig \" ( \" Cyf . \" )may be used by Welsh companies in a similar fashion .In the Republic of Ireland \" Teoranta \" ( \" Teo . \" )may be used instead , largely in Gaeltacht areas .\n\nQuestion: Who is the allegiance of this country."
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "\"Richard Marshal, 3rd Earl of Pembroke\" <stop> \n\n"
+                        },
+                        "answer": [
+                            "Richard Marshal, 3rd Earl of Pembroke"
+                        ],
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "id": "1a4c4895036be0699a4e404a7d7a7847565a1d2f4974838122329ac8911dcf5a",
+                "split": "train"
+            },
+            "page_rank": 3591
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Jos\u00e9 Mar\u00eda ( abbreviated Jos\u00e9 M\u00aa ) is a Spanish language male given name , usually considered a single given name rather than two names , and is a combination of the Spanish names of [human A] and Mary , the parents of Jesus Christ .The separate names \" Jos\u00e9 \" for males and \" Mar\u00eda \" for females also exist in the Spanish language .They can also combine in the inverse order forming the female name \" Mar\u00eda Jos\u00e9 \" ( M.\u00aa Jos\u00e9 ) ; that is , the gender of the compound names \" Jos\u00e9 Mar\u00eda \" and \" Mar\u00eda Jos\u00e9 \" is determined by their first component .The name \" Jos\u00e9 Mar\u00eda \" is colloquially shortened to \" Jos\u00e9 Mari \" , \" Josema \" or replaced by the hypocoristic forms \" Chema \" or \" Chemari \" .\" Jos\u00e9 Mar\u00eda \" , with its Portuguese language equivalent Jos\u00e9 Maria ( notice the absence of the acute accent over the i in the Portuguese version ) is a common name , and many famous people have this name or a similar one :\n\nQuestion: Can you tell me where human A was born?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "\"Nazareth\" <stop> \n\n"
+                        },
+                        "answer": [
+                            "Nazareth"
+                        ],
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "id": "f3de5d0973619c504e9e9508c0faba4f6a5618cfabd36742bbf8e6e068606fb1",
+                "split": "train"
+            },
+            "page_rank": 6213
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Societatea Na\u021bional\u0103 de Gaze Naturale Romgaz SA Media\u0219 ( SNGN Romgaz SA ) or simply Romgaz is the largest natural gas producer in [a country] and one of the largest in Eastern Europe .The company is responsible for producing around 40 % of the total natural gas consumption in [the country] .Its majority stockholder is the Government of Romania , which owns 70.01 % .Fondul Proprietatea owns 14.99 % , while the remaining 15 % is owned by various shareholders .The company is specialised in geological research for the discovery of hydrocarbons , production , storage , commercialization and the supply of natural gas and natural gas condensate .Romgaz is structured into six branches : two production branches located in T\u00e2rgu Mure\u0219 and Media\u0219 , one underground storage branch located in Ploie\u015fti , a special operations branch located in Media\u015f , a maintenance branch located in T\u00e2rgu Mure\u0219 and one international office located in Bratislava , Slovakia .\n\nQuestion: Which sea is the lowest point of the country?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "\"Black Sea\" <stop> \n\n"
+                        },
+                        "answer": [
+                            "Black Sea"
+                        ],
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "id": "81802c3a031641b11c258e7e7c3e0a6001601a6db4866075f63c48dc1ad28bcb",
+                "split": "train"
+            },
+            "page_rank": 17973
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Pite\u0219ti ( ) is a city in [a country] , located on the Arge\u0219 River .The capital and largest city of Arge\u0219 County , it is an important commercial and industrial center , as well as the home of two universities .Pite\u0219ti is situated in the historical region of Muntenia .It lies on the A1 freeway connecting the city directly to the national capital Bucharest , being an important railway junction , with a classification yard in nearby B\u0103lile\u0219ti .The city houses the Arpechim oil refinery , and is a marketing center for the automotive industry , in particular Automobile Dacia .Inhabited since prehistoric times but first mentioned in the 14th century , it developed as a trading town in northern Wallachia , serving as an informal residence for various Wallachian Princes until the 18th century .From the 19th century and until the interwar period , it was an important political center for the National Liberal Party and the main residence of the Br\u0103tianu family of politicians .During the early stages of the communist regime , it was one of the main sites of political repression , with the Pite\u0219ti prison becoming home to an experiment in brainwashing techniques .\n\nQuestion: What is the office held by the head of government in this country?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "\"Prime Minister of Romania\" <stop> \n\n"
+                        },
+                        "answer": [
+                            "Prime Minister of Romania"
+                        ],
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "id": "58999e401331afc366807d23ab680e2b0edbb84b3fafd7266a16116afd7e94cf",
+                "split": "train"
+            },
+            "page_rank": 22494
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Allen is a county in the U.S. state of Ohio .As of the 2010 census , the population was 106,331 .The county seat is Lima .The county was created in 1820 and organized in 1831 .The county is named for Colonel [a human being] , who was killed leading his men at the Battle of Frenchtown , during the War of 1812 .It has also been claimed the county was named for Revolutionary War soldier Ethan Allen , but the weight of the evidence in favor of [the human being] led the General Assembly to declare in 1976 that the county was named for him .Allen comprises the Lima , OH Metropolitan Statistical Area , which is also part of the Lima - Van Wert - Wapakoneta , OH Combined Statistical Area .\n\nQuestion: Which place was this human being born?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "\"Rockbridge County\" <stop> \n\n"
+                        },
+                        "answer": [
+                            "Rockbridge County"
+                        ],
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "id": "d8c840a54af5c54472376e51109b73306dc95a7b8806569395556ecc0f44db9a",
+                "split": "train"
+            },
+            "page_rank": 26298
+        }
+    ]
+}

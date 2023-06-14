@@ -1,0 +1,99 @@
+{
+    "adapter_spec": {
+        "instructions": "Your task is relation extraction between two events/\"Timex\" in a given document. An event is a specific occurrence of something. A \"Timex\" is a specific time point.\n\nThere are 10 types of relations: [\"before\", \"overlap\", \"contains\", \"simultaneous\", \"begins-on\", \"ends-on\", \"cause\", \"precondition\", \"subevent\", and \"coreference\"].\n(1) A, before, B: A is earlier than B.\n(2) A, overlap, B: the time range of A overlaps with the time range of B.\n(3) A, contains, B: the time range of A contains the time range of B.\n(4) A, simultaneous, B: the time range of A is the same as the time range of B.\n(5) A, begins-on, B: A begins at the time of B.\n(6) A, ends-on, B: A terminates at the time of B.\n(7) A, cause, B: A causes B.\n(8) A, precondition, B: A is a necessary condition of B. But A itself, without other conditions, might not cause B.\n(9) A, subevent, B: B is a component part of A and is spatiotemporally contained by A.\n(10) A, coreference, B: A and B refer to the same event.\nThe first 6 relation types ([\"before\", \"overlap\", \"contains\", \"simultaneous\", \"begins-on\", \"ends-on\"]) can be between two events, event and \"Timex\", or two \"Timex\". The later 4 relation types ([\"cause\", \"precondition\", \"subevent\", and \"coreference\"]) can only be between two events.\n\nThen, I will give you some documents. In each document, I annotate 2 events/\"Timex\" as \"<Event> event_name </Event>\" or \"<Timex> Timex_name </Timex>\".\nPlease judge whether there is a specific type of relation from the first event/\"Timex\" to the second event/\"Timex\". Only consider the relation from the first event/\"Timex\" to the second event/\"Timex\", but don't consider the relation from the second event/\"Timex\" to the first one. First explain your thoughts and then give the answer. If there is no relation, which is of a very high possibility, the answer should be \"Answer: []\". If there is a relation type or multiple relation types, the answer form is \"Answer: [relation type 1, relation type 2, ...]\".\nDon't consider any extra knowledge outside the given document. Don't make any complex inferences and only consider direct relations. Don't extend the meaning of an event/\"Timex\" to its surrounding words, but only consider the meaning of the specific words.\n",
+        "input_prefix": "",
+        "input_suffix": "\n",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "",
+        "output_suffix": "\n",
+        "instance_prefix": "",
+        "max_train_instances": 4,
+        "max_eval_instances": 100,
+        "max_tokens": 200,
+        "stop_sequences": [],
+        "decoding_parameters": {
+            "temperature": 1,
+            "top_p": 1
+        },
+        "ouput_format": "string"
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Document:\nThe defence of Outpost Snipe in Egypt, took place in the Second Battle of El Alamein, part of the Western Desert Campaign during the Second World War. On the night of 1942, the 2nd Battalion of the Rifle Brigade (part of the 7th Motor Brigade), with thirteen 6-pounder anti-tank guns and the 239th Battery, 76th Anti-Tank Regiment RA, with six more 6-pounders, was <Event> ordered </Event> to occupy a desert feature known as Snipe, a small depression in the landscape south-west of Kidney Ridge that was suitable for an outpost. Once consolidated, it could be used as a jumping-off point for an advance by the 24th Armoured Brigade. From the 2nd Rifle Brigade <Event> defeated </Event> numerous Axis armoured counter-attacks and withstood constant artillery-bombardments and machine-gun fire, while knocking out armoured vehicles, with intermittent support from the tanks and artillery of the 1st Armoured Division. The defence of Outpost Snipe managed to spoil the biggest Axis counter-attack against the positions captured by the Eighth Army, during Operation Lightfoot but the Battalion had 72 casualties. The fighting at Outpost Snipe led Rommel to write that an armoured attack, on ground which the defenders had been able to prepare, was unlikely to succeed.\n\nThe first event/\"Timex\": <Event> defeated </Event>\nThe second event/\"Timex\": <Event> ordered </Event>\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Explanation: The first event/\"Timex\", \"defeated\", happened after the second event/\"Timex\", \"ordered\". However, \"after\" is not in the given list of relation types, and we only consider the relation from the first event/\"Timex\" to the second event/\"Timex\", so there is no relation.\nAnswer: []\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "0"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Document:\nThe 2010 Kalgoorlie-Boulder earthquake was a 5.2 earthquake that occurred near the city of Kalgoorlie-Boulder, Western Australia on 20 April 2010, at approximately 8:17 am WST. The earthquake caused major damage to the historic buildings in Kalgoorlie-Boulder. Its epicenter was approximately southwest of Kalgoorlie, at a depth of . The duration of shaking lasted about 10\u201315 seconds and was felt up to away. It was also the largest recorded in the Goldfields region in terms of magnitude and one of the largest in Australia in terms of resulting damage. No one was <Event> killed </Event> but two people were treated at Kalgoorlie Hospital for minor injuries resulting from the <Event> earthquake </Event>. It resulted in the temporary closure of local gold mines including the Super Pit gold mine.\n\nThe first event/\"Timex\": <Event> killed </Event>\nThe second event/\"Timex\": <Event> earthquake </Event>\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Explanation: The first event/\"Timex\" refers to the fact that no one was killed in the earthquake. The second event/\"Timex\" is the earthquake. Since no one was killed by the earthquake, there is no relation from the first event/\"Timex\" to the second one.\nAnswer: []\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "1"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Document:\nThe 2012 Euroleague Final Four was the concluding EuroLeague Final Four tournament of the 2011\u201312 Euroleague season. It was held on <Timex> May 11\u201313 , 2012 </Timex>. The tournament was hosted at the Sinan Erdem Dome, in Istanbul, Turkey. Olympiacos won its second ever EuroLeague championship, after beating CSKA Moscow in the Final. In the Final, Georgios Printezis hit a floater with 0.7 seconds remaining on the game clock, after <Event> receiving </Event> an assist from Vassilis Spanoulis, to win the EuroLeague cup. Spanoulis won his second Final Four MVP after the tournament.\n\nThe first event/\"Timex\": <Timex> May 11\u201313 , 2012 </Timex>\nThe second event/\"Timex\": <Event> receiving </Event>\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Explanation: The first event/\"Timex\" is the days of the tournament. The second event/\"Timex\" is a specific event during the tournament. The time range of the tournament contains the specific event, so the relation from the first event/\"Timex\" to the second one is \"contains\".\nAnswer: [contains]\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "2"
+            }
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Document:\nThe Burnin' Tour was a concert tour organised to promote the album \"Burnin\"' by Bob Marley and the Wailers (Bob Marley, Peter Tosh, Joe Higgs). The tour began in Homestead, Florida, in mid October 1973, and ended in Northampton, England, in late November. Bunny Wailer, who had not participated in the American leg of the Catch a Fire Tour, was replaced by Joe Higgs. The first four shows of the second tour leg in England had been cancelled due to Tosh's illness. The tour ended in Northampton,at the Northampton College of further education. England; the rest of the tour was cancelled due to heavy snow. during the tour, some crucial bob marley and the wailers <Event> recordings </Event> had been made; the appearance at the capitol studios had been videotaped and has been <Event> used </Event> for several documentary movies. The appearance at Sausalito's Record Plant had been broadcast live by KSAN and later officially released on the album \"Talkin' Blues\". Furthermore, the appearances at BBC's Top of the Pops and at Leeds University had been recorded as well and later were officially released on the second disc of the deluxe edition of the \"Burnin'\" album.\n\nThe first event/\"Timex\": <Event> recordings </Event>\nThe second event/\"Timex\": <Event> used </Event>\n"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Explanation: The first event/\"Timex\" refers to the wailers recordings. The second event/\"Timex\" refers to the use of the videotaped appearance at the capitol studios. They are two separate events, so there is no relation from the first event/\"Timex\" to the second one.\nAnswer: []\n"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "3"
+            }
+        }
+    ]
+}

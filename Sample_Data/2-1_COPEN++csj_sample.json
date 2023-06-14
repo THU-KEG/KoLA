@@ -1,0 +1,118 @@
+{
+    "adapter_spec": {
+        "instructions": "",
+        "input_prefix": "Conceptual similarity judgment: ",
+        "input_suffix": "Please answer the entity name only.",
+        "reference_prefix": "",
+        "reference_suffix": "",
+        "output_prefix": "Answer: ",
+        "output_suffix": "",
+        "instance_prefix": "",
+        "max_train_instances": 5,
+        "max_eval_instances": 1000,
+        "max_tokens": 128,
+        "stop_sequences": []
+    },
+    "request_states": [
+        {
+            "instance": {
+                "input": {
+                    "text": "Among Eclipse Award, Portland Trail Blazers, Mahabharata, Legislative Assembly of British Columbia, Greek Basket League, Science Citation Index, Byron White, The Sound of Drums, Soviet Air Forces, Earl of Lincoln, Burns and Allen, Milwaukee Brewers, Larry Bird, Brian Clough, The Cherry Orchard, Billboard charts, Arizona Coyotes, Janice Pennington, Daily Mail, Janaye Ingram, Green earth, which one is the most conceptually similar with Kenneth Clarke?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Byron White"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Among Ted Mosby, Chrysler Imperial, ELF 500 ROC, Salvador Allende, Romeo and Juliet, The Waters of Mars, Hamilton Tiger-Cats, Bigelow Commercial Space Station, Geoffrey Chaucer, Stanford Encyclopedia of Philosophy, London and North Eastern Railway, Ziegfeld Follies, The Kenyon Review, John Glenn, Edgar Allan Poe, Oakleigh Football Club, United States Patent and Trademark Office, Hartford Whalers, Joko Widodo, Conan the Barbarian, Steve Albini, which one is the most conceptually similar with Rose?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "The Waters of Mars"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Among American Statistical Association, Jean Anthelme Brillat-Savarin, Kenesaw Mountain Landis, Albanian Radio Television, Bellator MMA: Season Eight, GB-1, glossary of chess, Ugadi, Arizona State University, Midland Railway, Don Carlos, Phil Collins, Ottawa Rough Riders, Pius V, Phyllis Breslin, William Averell Harriman, DOS-2, Pablo Escobar, Bellator MMA: Season Nine, Peterborough Pets, Doctor Strange, which one is the most conceptually similar with DC Comics?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Arizona State University"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Among Brooklyn Nets, HMS Investigator, BMW R100S, propellant depot, Victorian Heritage Register, Jack Shephard, Ulster Unionist Party, Australia II, Maha Shivaratri, Hugh Fearnley-Whittingstall, Stratospheric Observatory for Infrared Astronomy, Kubla Khan, Florida Panthers, R-29RMU Sineva, sestina, Gospatric, Earl of Northumbria, University of Birmingham, Bellator Fighting Championships: Season Five, development hell, New Democratic Party, Daily Express, which one is the most conceptually similar with Marine One?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "Stratospheric Observatory for Infrared Astronomy"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        },
+        {
+            "instance": {
+                "input": {
+                    "text": "Among Silence in the Library, Bharatiya Janata Party, Tom Hanks, New York City Council, American Expeditionary Forces, Max Wolf, Royal College of Surgeons of England, John Chayka, Corpus Juris Civilis, Richard Wagner, Courtney Love, Avril Lavigne, Manuel Noriega, Toronto Star, Syed Ahmed Khan, Washington Nationals, Hugh the Great, Elizabeth I of England, flax, Zaha Hadid, South Fremantle Football Club, which one is the most conceptually similar with Parliament of Great Britain?"
+                },
+                "references": [
+                    {
+                        "output": {
+                            "text": "New York City Council"
+                        },
+                        "tags": [
+                            "correct"
+                        ]
+                    }
+                ],
+                "split": "train",
+                "id": "id1295"
+            },
+            "request": {}
+        }
+    ]
+}
