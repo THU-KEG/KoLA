@@ -59,7 +59,7 @@ Second, we provide a visualization tool to help you visualize the results. You c
 
 ## Citation and Lisence
 
-The project is hosted with the MIT License.
+The project is hosted with the GPLv3 License.
 
 If these sample datasets have been helpful in assisting your participation in the evaluation (or any other research endeavor), we sincerely appreciate it and encourage you to cite the following article(s):
 
