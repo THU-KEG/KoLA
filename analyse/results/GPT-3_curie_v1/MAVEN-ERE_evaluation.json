@@ -1,0 +1,22 @@
+{
+    "temporal": {
+        "precision": 0.0470588235293564,
+        "recall": 0.045977011494200026,
+        "f1-score": 0.04651162785692943
+    },
+    "causal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0
+    },
+    "subevent": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0
+    },
+    "coreference": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0
+    }
+}

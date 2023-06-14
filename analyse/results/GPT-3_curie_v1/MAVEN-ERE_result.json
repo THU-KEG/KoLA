@@ -1,0 +1,4 @@
+            Temporal | Causal | Subevent | Coreference
+precision: 0.0548    | 0.0000 | 0.0000   | 0.0000
+recall:    0.0460    | 0.0000 | 0.0000   | 0.0000
+f1-score:  0.0500    | nan | nan   | nan

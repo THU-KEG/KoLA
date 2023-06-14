@@ -1,0 +1,12 @@
+{
+    "identification": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+    },
+    "classification": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+    }
+}

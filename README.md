@@ -37,7 +37,7 @@ It is important to note that the Config file is not mandatory but is provided fo
 
 We provide researchers and developers interested in participating in the evaluation with a one-click data download feature. This downloadable file will be continuously updated, enabling developers to conveniently download sample data and data descriptions for all tasks. For more detailed information, you can visit the `Task` page on our website and refer to our paper to learn about the specific datasets used and their corresponding instruction examples.
 
-* Download the [Sample_Data.zip]() here!
+* Download the [Sample_Data.zip](https://cloud.tsinghua.edu.cn/f/03f03c547fc14ce7a785/?dl=1) here!
 
 This .zip file includes 5 examples for each established task in KoLA, as well as a detailed Readme file for description.
 
@@ -45,7 +45,17 @@ This .zip file includes 5 examples for each established task in KoLA, as well as
 
 To facilitate the reproducibility of the paper's results, we provide tools for each model's absolute performance, as well as a series of operations such as standardization and visualization. These tools can also assist subsequent contributors in obtaining results in advance during the leaderboard waiting period and ensure the fairness of our results.
 
-To use these tools...
+First, we have put the 21 models' raw evaluation results in `analyse/results/`. 
+To get standardization scores, run the following command:
+
+```bash
+python analyse/unify.py
+```
+
+Then, the standardized results will be saved in `analyse/dataset_final_scores.csv`.
+
+Second, we provide a visualization tool to help you visualize the results. You can run `analyse/plot.ipynb` to get *spearman correlation* and *scatter plots*.
+
 
 ## Citation and Lisence
 

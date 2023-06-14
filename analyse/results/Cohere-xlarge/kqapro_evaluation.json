@@ -1,0 +1,9 @@
+{
+  "overall": 0.19,
+  "multihop": 0.213,
+  "qualifier": 0.226,
+  "comparison": 0.235,
+  "logical": 0.231,
+  "count": 0.111,
+  "verify": 0.5
+}
