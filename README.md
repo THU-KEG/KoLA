@@ -62,3 +62,12 @@ Second, we provide a visualization tool to help you visualize the results. You c
 The project is hosted with the MIT License.
 
 If these sample datasets have been helpful in assisting your participation in the evaluation (or any other research endeavor), we sincerely appreciate it and encourage you to cite the following article(s):
+
+```bibtex
+@article{yu2023kola,
+  title={KoLA: Carefully Benchmarking World Knowledge of Large Language Models},
+  author={Jifan Yu, Xiaozhi Wang, Shangqing Tu, Shulin Cao, Daniel Zhang-Li, Xin Lv, Hao Peng, Zijun Yao, Xiaohan Zhang, Hanming Li, Chunyang Li, Zheyuan Zhang, Yushi Bai, Yantao Liu, Amy Xin, Nianyi Lin, Kaifeng Yun, Linlu Gong, Jianhui Chen, Zhili Wu, Yunjia Qi, Weikai Li, Yong Guan, Kaisheng Zeng, Ji Qi, Hailong Jin, Jinxin Liu, Yu Gu, Yuan Yao, Ning Ding, Lei Hou, Zhiyuan Liu, Bin Xu, Jie Tang, Juanzi Li},
+  year={2023},
+  url={"https://github.com/THU-KEG/KoLA"}
+}
+ ```
