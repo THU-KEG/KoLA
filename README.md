@@ -7,7 +7,7 @@ This repository presents the sample data for easily submission, standardized sco
 
 ## Join Us
 
-<font color=red>[Updated 2023.6.28: Confidential Submission]</font> We have noticed that some developers of large-scale models wish to make confidential submissions. We welcome you to reach out to us via private message or email, and we will support such evaluations under a confidentiality agreement. However, please note that the results of these evaluations will not be publicly showcased in the second season.
+**[Updated 2023.6.28: Confidential Submission]** We have noticed that some developers of large-scale models wish to make confidential submissions. We welcome you to reach out to us via private message or email, and we will support such evaluations under a confidentiality agreement. However, please note that the results of these evaluations will not be publicly showcased in the second season.
 
 KoLA is currently recruiting datasets and participating models for the second season. If you are interested, we warmly welcome you to contact us via email at [kola-benchmark@googlegroups.com](mailto:kola-benchmark@googlegroups.com) or join our Slack channel at https://join.slack.com/t/kolabenchamrk/shared_invite/zt-1wognxoox-mAgjGYvjL32ZlG7MH6zVuA. The recruitment will close on <font color =#6a3378>July 31st</font>, and the evaluation will commence shortly thereafter, with all results being published and concluded by September 30th.
 
@@ -16,7 +16,6 @@ We are committed to ongoing maintenance of this toolkit and have also establishe
 ## News !!
 
 * [2023.6.30] Season 2nd call for data and model before July 31th. We also support confidential submission (for developers) !
-* [2023.6.18]
 * [2023.6.13] Our platform is now available at https://kola.xlore.cn/.
 * [2023.6.7] Our paper has been submitted to Neurips 2023 (Datasets and Benchmarks Track)
 * [2023.5.31] All the results of Season 1st have been published.
