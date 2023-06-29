@@ -21,12 +21,12 @@
         {
             "instance": {
                 "input": {
-                    "text": "Who is the mother of Luna?"
+                    "text": "Will Messi still serve in Paris Saint-Germain?"
                 },
                 "references": [
                     {
                         "output": {
-                            "text": "Helen"
+                            "text": "No"
                         },
                         "tags": [
                             "correct"
@@ -41,12 +41,12 @@
         {
             "instance": {
                 "input": {
-                    "text": "What is the country of citizenship of Taylor Fritz?"
+                    "text": "What is the missing piece for Manchester City to win the Premier League?"
                 },
                 "references": [
                     {
                         "output": {
-                            "text": "U"
+                            "text": "Erling Haaland"
                         },
                         "tags": [
                             "correct"
@@ -61,12 +61,12 @@
         {
             "instance": {
                 "input": {
-                    "text": "What country is Gunners in?"
+                    "text": "When will China send people to the moon?"
                 },
                 "references": [
                     {
                         "output": {
-                            "text": "English"
+                            "text": "2030"
                         },
                         "tags": [
                             "correct"
@@ -81,12 +81,12 @@
         {
             "instance": {
                 "input": {
-                    "text": "What is the country of citizenship of Pegula?"
+                    "text": "What will be the next feature of ChatGPT?"
                 },
                 "references": [
                     {
                         "output": {
-                            "text": "American"
+                            "text": "iOS app"
                         },
                         "tags": [
                             "correct"
@@ -101,12 +101,12 @@
         {
             "instance": {
                 "input": {
-                    "text": "What country is Punta Cana in?"
+                    "text": "Who will Elon Musk pick to be Twitter's CEO?"
                 },
                 "references": [
                     {
                         "output": {
-                            "text": "Dominican Republic"
+                            "text": "Linda Yaccarino"
                         },
                         "tags": [
                             "correct"
