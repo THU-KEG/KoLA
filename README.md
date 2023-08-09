@@ -43,6 +43,17 @@ We provide researchers and developers interested in participating in the evaluat
 
 This .zip file includes 5 examples for each established task in KoLA, as well as a detailed Readme file for description.
 
+## Evaluation Scripts
+
+We provide a sample evaluation script for each task. The script is used to evaluate the performance of the model on the task. The script will be executed in the following way:
+
+```bash
+python eval/<dataset_id>_evaluate.py <input_file>  <output_file>
+```
+- `<dataset_id>`: the id of the dataset, e.g., `3-4_kqapro`.
+- `<input_file>`: the inference result of the model, e.g., `kqapro_inference.json`.
+- `<output_file>`: the output score file of the evaluation, e.g., `kqapro_evaluation.json`.
+
 ## Result Analysis Tools
 
 To facilitate the reproducibility of the paper's results, we provide tools for each model's absolute performance, as well as a series of operations such as standardization and visualization. These tools can also assist subsequent contributors in obtaining results in advance during the leaderboard waiting period and ensure the fairness of our results.
